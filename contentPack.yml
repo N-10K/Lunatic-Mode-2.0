@@ -1,0 +1,4692 @@
+!!ContentPack
+identifier:
+  name: Lunatic Mode TEST VERSION
+  version: {major: 2, minor: 0}
+  author: Lunarian_Gunner
+animationTemplates:
+- &character
+  id: 0
+  name: character
+  animations:
+    MOVE_RIGHT:
+      frameDuration: 200
+      action: MOVE_RIGHT
+      frames:
+      - {x: 1, y: 3}
+      - {x: 0, y: 3}
+      - {x: 2, y: 3}
+      - {x: 0, y: 3}
+      rotationPerSecond: 0.0
+    MOVE_UP:
+      frameDuration: 200
+      action: MOVE_UP
+      frames:
+      - {x: 1, y: 1}
+      - {x: 0, y: 1}
+      - {x: 2, y: 1}
+      - {x: 0, y: 1}
+      rotationPerSecond: 0.0
+    MOVE_LEFT:
+      frameDuration: 200
+      action: MOVE_LEFT
+      frames:
+      - {x: 1, y: 2}
+      - {x: 0, y: 2}
+      - {x: 2, y: 2}
+      - {x: 0, y: 2}
+      rotationPerSecond: 0.0
+    MOVE_DOWN:
+      frameDuration: 200
+      action: MOVE_DOWN
+      frames:
+      - {x: 1, y: 0}
+      - {x: 0, y: 0}
+      - {x: 2, y: 0}
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_RIGHT:
+      frameDuration: 200
+      action: STAND_RIGHT
+      frames:
+      - {x: 0, y: 3}
+      rotationPerSecond: 0.0
+    STAND_UP:
+      frameDuration: 200
+      action: STAND_UP
+      frames:
+      - {x: 0, y: 1}
+      rotationPerSecond: 0.0
+    STAND_LEFT:
+      frameDuration: 200
+      action: STAND_LEFT
+      frames:
+      - {x: 0, y: 2}
+      rotationPerSecond: 0.0
+    STAND_DOWN:
+      frameDuration: 200
+      action: STAND_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_RIGHT:
+      frameDuration: 200
+      action: WORK_RIGHT
+      frames:
+      - {x: 0, y: 3}
+      - {x: 2, y: 3}
+      rotationPerSecond: 0.0
+    WORK_UP:
+      frameDuration: 200
+      action: WORK_UP
+      frames:
+      - {x: 0, y: 1}
+      - {x: 2, y: 1}
+      rotationPerSecond: 0.0
+    WORK_DOWN:
+      frameDuration: 200
+      action: WORK_DOWN
+      frames:
+      - {x: 0, y: 0}
+      - {x: 2, y: 0}
+      rotationPerSecond: 0.0
+    WORK_LEFT:
+      frameDuration: 200
+      action: WORK_LEFT
+      frames:
+      - {x: 0, y: 2}
+      - {x: 2, y: 2}
+      rotationPerSecond: 0.0
+- &harvest
+  id: 1
+  name: harvest
+  animations:
+    DEFAULT:
+      frameDuration: 1000
+      action: DEFAULT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    HARVESTED:
+      frameDuration: 1000
+      action: HARVESTED
+      frames:
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+- &single_image_equipment
+  id: 2
+  name: single_image_equipment
+  animations:
+    MOVE_RIGHT:
+      frameDuration: 1000
+      action: MOVE_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    MOVE_UP:
+      frameDuration: 1000
+      action: MOVE_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    MOVE_LEFT:
+      frameDuration: 1000
+      action: MOVE_LEFT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    MOVE_DOWN:
+      frameDuration: 1000
+      action: MOVE_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_RIGHT:
+      frameDuration: 1000
+      action: STAND_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_UP:
+      frameDuration: 1000
+      action: STAND_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_LEFT:
+      frameDuration: 1000
+      action: STAND_LEFT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_DOWN:
+      frameDuration: 1000
+      action: STAND_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_RIGHT:
+      frameDuration: 1000
+      action: WORK_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_UP:
+      frameDuration: 1000
+      action: WORK_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_DOWN:
+      frameDuration: 1000
+      action: WORK_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_LEFT:
+      frameDuration: 1000
+      action: WORK_LEFT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+- &single_image
+  id: 3
+  name: single_image
+  animations:
+    MOVE_RIGHT:
+      frameDuration: 1000
+      action: MOVE_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    MOVE_UP:
+      frameDuration: 1000
+      action: MOVE_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    MOVE_LEFT:
+      frameDuration: 1000
+      action: MOVE_LEFT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    MOVE_DOWN:
+      frameDuration: 1000
+      action: MOVE_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_RIGHT:
+      frameDuration: 1000
+      action: STAND_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_UP:
+      frameDuration: 1000
+      action: STAND_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_LEFT:
+      frameDuration: 1000
+      action: STAND_LEFT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_DOWN:
+      frameDuration: 1000
+      action: STAND_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_RIGHT:
+      frameDuration: 1000
+      action: WORK_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_UP:
+      frameDuration: 1000
+      action: WORK_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_DOWN:
+      frameDuration: 1000
+      action: WORK_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_LEFT:
+      frameDuration: 1000
+      action: WORK_LEFT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    DEFAULT:
+      frameDuration: 1000
+      action: DEFAULT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+- &bidirectional_single_image_equipment
+  id: 4
+  name: bidirectional_single_image_equipment
+  animations:
+    MOVE_RIGHT:
+      frameDuration: 1000
+      action: MOVE_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    MOVE_UP:
+      frameDuration: 1000
+      action: MOVE_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    MOVE_LEFT:
+      frameDuration: 1000
+      action: MOVE_LEFT
+      frames:
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+    MOVE_DOWN:
+      frameDuration: 1000
+      action: MOVE_DOWN
+      frames:
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+    STAND_RIGHT:
+      frameDuration: 1000
+      action: STAND_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_UP:
+      frameDuration: 1000
+      action: STAND_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_LEFT:
+      frameDuration: 1000
+      action: STAND_LEFT
+      frames:
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+    STAND_DOWN:
+      frameDuration: 1000
+      action: STAND_DOWN
+      frames:
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+    WORK_RIGHT:
+      frameDuration: 1000
+      action: WORK_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_UP:
+      frameDuration: 1000
+      action: WORK_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_DOWN:
+      frameDuration: 1000
+      action: WORK_DOWN
+      frames:
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+    WORK_LEFT:
+      frameDuration: 1000
+      action: WORK_LEFT
+      frames:
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+- &animated
+  id: 5
+  name: animated
+  animations:
+    DEFAULT:
+      frameDuration: 500
+      action: DEFAULT
+      frames:
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+- &rotating_image
+  id: 6
+  name: rotating_image
+  animations:
+    MOVE_RIGHT:
+      frameDuration: 1000
+      action: MOVE_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    MOVE_UP:
+      frameDuration: 1000
+      action: MOVE_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    MOVE_LEFT:
+      frameDuration: 1000
+      action: MOVE_LEFT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    MOVE_DOWN:
+      frameDuration: 1000
+      action: MOVE_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    STAND_RIGHT:
+      frameDuration: 1000
+      action: STAND_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    STAND_UP:
+      frameDuration: 1000
+      action: STAND_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    STAND_LEFT:
+      frameDuration: 1000
+      action: STAND_LEFT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    STAND_DOWN:
+      frameDuration: 1000
+      action: STAND_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    WORK_RIGHT:
+      frameDuration: 1000
+      action: WORK_RIGHT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    WORK_UP:
+      frameDuration: 1000
+      action: WORK_UP
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    WORK_DOWN:
+      frameDuration: 1000
+      action: WORK_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    WORK_LEFT:
+      frameDuration: 1000
+      action: WORK_LEFT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+    DEFAULT:
+      frameDuration: 1000
+      action: DEFAULT
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 5.0
+- &quadirectional_single_image_equipment
+  id: 7
+  name: quadirectional_single_image_equipment
+  animations:
+    MOVE_RIGHT:
+      frameDuration: 1000
+      action: MOVE_RIGHT
+      frames:
+      - {x: 0, y: 1}
+      rotationPerSecond: 0.0
+    MOVE_UP:
+      frameDuration: 1000
+      action: MOVE_UP
+      frames:
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+    MOVE_LEFT:
+      frameDuration: 1000
+      action: MOVE_LEFT
+      frames:
+      - {x: 1, y: 1}
+      rotationPerSecond: 0.0
+    MOVE_DOWN:
+      frameDuration: 1000
+      action: MOVE_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    STAND_RIGHT:
+      frameDuration: 1000
+      action: STAND_RIGHT
+      frames:
+      - {x: 0, y: 1}
+      rotationPerSecond: 0.0
+    STAND_UP:
+      frameDuration: 1000
+      action: STAND_UP
+      frames:
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+    STAND_LEFT:
+      frameDuration: 1000
+      action: STAND_LEFT
+      frames:
+      - {x: 1, y: 1}
+      rotationPerSecond: 0.0
+    STAND_DOWN:
+      frameDuration: 1000
+      action: STAND_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_RIGHT:
+      frameDuration: 1000
+      action: WORK_RIGHT
+      frames:
+      - {x: 0, y: 1}
+      rotationPerSecond: 0.0
+    WORK_UP:
+      frameDuration: 1000
+      action: WORK_UP
+      frames:
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+    WORK_DOWN:
+      frameDuration: 1000
+      action: WORK_DOWN
+      frames:
+      - {x: 0, y: 0}
+      rotationPerSecond: 0.0
+    WORK_LEFT:
+      frameDuration: 1000
+      action: WORK_LEFT
+      frames:
+      - {x: 1, y: 1}
+      rotationPerSecond: 0.0
+- &healing_circle
+  id: 8
+  name: healing_circle
+  animations:
+    DEFAULT:
+      frameDuration: 120
+      action: DEFAULT
+      frames:
+      - {x: 0, y: 0}
+      - {x: 1, y: 0}
+      - {x: 2, y: 0}
+      - {x: 3, y: 0}
+      - {x: 4, y: 0}
+      - {x: 3, y: 0}
+      - {x: 2, y: 0}
+      - {x: 1, y: 0}
+      rotationPerSecond: 0.0
+equipmentOffsets:
+- &character02
+  id: 0
+  name: character
+  frameOffsets:
+  - {x: 0, y: 0, offsetX: 0, offsetY: 2, back: false}
+  - {x: 1, y: 0, offsetX: 0, offsetY: 3, back: true}
+  - {x: 2, y: 0, offsetX: 1, offsetY: 1, back: false}
+  - {x: 0, y: 1, offsetX: 6, offsetY: 2, back: false}
+  - {x: 1, y: 1, offsetX: 5, offsetY: 1, back: false}
+  - {x: 2, y: 1, offsetX: 6, offsetY: 3, back: true}
+  - {x: 0, y: 2, offsetX: 4, offsetY: 2, back: false}
+  - {x: 1, y: 2, offsetX: 5, offsetY: 2, back: false}
+  - {x: 2, y: 2, offsetX: 3, offsetY: 2, back: false}
+  - {x: 0, y: 3, offsetX: 2, offsetY: 2, back: false}
+  - {x: 1, y: 3, offsetX: 1, offsetY: 2, back: false}
+  - {x: 2, y: 3, offsetX: 3, offsetY: 2, back: false}
+- &wood_staff
+  id: 1
+  name: wood_staff
+  frameOffsets:
+  - {x: 0, y: 0, offsetX: 2, offsetY: 3, back: false}
+- &standard_bow
+  id: 2
+  name: standard_bow
+  frameOffsets:
+  - {x: 0, y: 0, offsetX: 0, offsetY: 1, back: false}
+  - {x: 1, y: 0, offsetX: 2, offsetY: 1, back: false}
+- &kendo_stick
+  id: 3
+  name: kendo_stick
+  frameOffsets:
+  - {x: 0, y: 0, offsetX: 1, offsetY: 1, back: false}
+  - {x: 1, y: 0, offsetX: 0, offsetY: 1, back: false}
+- &slingshot
+  id: 4
+  name: slingshot
+  frameOffsets:
+  - {x: 0, y: 0, offsetX: 2, offsetY: 0, back: false}
+  - {x: 1, y: 0, offsetX: 1, offsetY: 0, back: false}
+- &youkai_extermination_kit
+  id: 5
+  name: youkai_extermination_kit
+  frameOffsets:
+  - {x: 0, y: 0, offsetX: 0, offsetY: 0, back: false}
+  - {x: 1, y: 0, offsetX: 1, offsetY: 0, back: false}
+- &iron_musket
+  id: 6
+  name: iron_musket
+  frameOffsets:
+  - {x: 0, y: 0, offsetX: 2, offsetY: 5, back: false}
+  - {x: 1, y: 0, offsetX: 5, offsetY: 2, back: true}
+  - {x: 0, y: 1, offsetX: 2, offsetY: 6, back: false}
+  - {x: 1, y: 1, offsetX: 5, offsetY: 6, back: false}
+- &iron_katana
+  id: 7
+  name: iron_katana
+  frameOffsets:
+  - {x: 0, y: 0, offsetX: 1, offsetY: 1, back: false}
+  - {x: 1, y: 0, offsetX: 1, offsetY: 1, back: false}
+- &iron_sword
+  id: 8
+  name: iron_sword
+  frameOffsets:
+  - {x: 0, y: 0, offsetX: 1, offsetY: 1, back: false}
+- &wand
+  id: 9
+  name: wand
+  frameOffsets:
+  - {x: 0, y: 0, offsetX: 1, offsetY: 1, back: false}
+spriteSheets:
+- &character03
+  id: 0
+  name: character
+  width: 7
+  height: 8
+  image: Images/character.png
+  animationTemplate: *character
+  equipmentOffset: *character02
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &Tree1
+  id: 1
+  name: Tree1
+  width: 15
+  height: 22
+  image: Images/tree.png
+  animationTemplate: *harvest
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &Tall_Grass
+  id: 2
+  name: Tall_Grass
+  width: 10
+  height: 10
+  image: Images/grass.png
+  animationTemplate: *harvest
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &wood_staff02
+  id: 3
+  name: wood_staff
+  width: 5
+  height: 7
+  image: Images/wood_staff.png
+  animationTemplate: *single_image_equipment
+  equipmentOffset: *wood_staff
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &wood_staff_strike
+  id: 4
+  name: wood_staff_strike
+  width: 4
+  height: 3
+  image: Images/wood_staff_strike.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &crude_arrow
+  id: 5
+  name: crude_arrow
+  width: 6
+  height: 3
+  image: Images/crude_arrow.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &wood_bow
+  id: 6
+  name: wood_bow
+  width: 3
+  height: 7
+  image: Images/wood_bow.png
+  animationTemplate: *bidirectional_single_image_equipment
+  equipmentOffset: *standard_bow
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &campfire
+  id: 7
+  name: campfire
+  width: 6
+  height: 5
+  image: Images/campfire.png
+  animationTemplate: *animated
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &culinary_table
+  id: 8
+  name: culinary_table
+  width: 10
+  height: 8
+  image: Images/culinary_table.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &kendo_stick02
+  id: 9
+  name: kendo_stick
+  width: 2
+  height: 6
+  image: Images/kendo_stick.png
+  animationTemplate: *bidirectional_single_image_equipment
+  equipmentOffset: *kendo_stick
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &kendo_stick_swing
+  id: 10
+  name: kendo_stick_swing
+  width: 3
+  height: 7
+  image: Images/kendo_stick_hit.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &reinforced_bow
+  id: 11
+  name: reinforced_bow
+  width: 3
+  height: 7
+  image: Images/reinforced_bow.png
+  animationTemplate: *bidirectional_single_image_equipment
+  equipmentOffset: *standard_bow
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &rock02
+  id: 12
+  name: rock
+  width: 10
+  height: 7
+  image: Images/rock.png
+  animationTemplate: *harvest
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &small_stones
+  id: 13
+  name: small_stones
+  width: 8
+  height: 8
+  image: Images/small_rocks.png
+  animationTemplate: *harvest
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: false
+  shadowResizing: 0
+- &pebble
+  id: 14
+  name: pebble
+  width: 2
+  height: 2
+  image: Images/pebble_shot.png
+  animationTemplate: *rotating_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &crafting_table
+  id: 15
+  name: crafting_table
+  width: 10
+  height: 6
+  image: Images/crafting_table.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &forge
+  id: 16
+  name: forge
+  width: 8
+  height: 7
+  image: Images/forge.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &forge_working
+  id: 17
+  name: forge_working
+  width: 8
+  height: 7
+  image: Images/forge_working.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &chest
+  id: 18
+  name: chest
+  width: 8
+  height: 8
+  image: Images/chest.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &reinforced_wall
+  id: 19
+  name: reinforced_wall
+  width: 8
+  height: 12
+  image: Images/fortified_wall.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &leather_armor
+  id: 20
+  name: leather_armor
+  width: 7
+  height: 8
+  image: Images/leather_armor.png
+  animationTemplate: *character
+  equipmentOffset: *character02
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &low_fae
+  id: 21
+  name: low_fae
+  width: 6
+  height: 5
+  image: Images/low_fae.png
+  animationTemplate: *character
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &bento
+  id: 22
+  name: bento
+  width: 7
+  height: 7
+  image: Images/bento.png
+  animationTemplate: *character
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &fae_bullet
+  id: 23
+  name: fae_bullet
+  width: 2
+  height: 2
+  image: Images/fae_bullet.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &w_slingshot
+  id: 24
+  name: w_slingshot
+  width: 4
+  height: 4
+  image: Images/slingshot.png
+  animationTemplate: *bidirectional_single_image_equipment
+  equipmentOffset: *slingshot
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &chest_open
+  id: 25
+  name: chest_open
+  width: 8
+  height: 8
+  image: Images/chest_open.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &magic_forge
+  id: 26
+  name: magic_forge
+  width: 12
+  height: 9
+  image: Images/elemental_forge.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &sealing_needle
+  id: 27
+  name: sealing_needle
+  width: 6
+  height: 3
+  image: Images/extermination_needle.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &sealing_amulet
+  id: 28
+  name: sealing_amulet
+  width: 6
+  height: 4
+  image: Images/extermination_charm.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &none
+  id: 29
+  name: none
+  width: 8
+  height: 8
+  image: Images/none.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &youkai_extermination_kit02
+  id: 30
+  name: youkai_extermination_kit
+  width: 2
+  height: 3
+  image: Images/youkai_extermination_set.png
+  animationTemplate: *bidirectional_single_image_equipment
+  equipmentOffset: *youkai_extermination_kit
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &shinto_shrine
+  id: 31
+  name: shinto_shrine
+  width: 32
+  height: 22
+  image: Images/shrine.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &wheat_farm
+  id: 32
+  name: wheat_farm
+  width: 8
+  height: 9
+  image: Images/wheat_farm.png
+  animationTemplate: *harvest
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &tree_2
+  id: 33
+  name: tree 2
+  width: 15
+  height: 22
+  image: Images/etherium_tree.png
+  animationTemplate: *harvest
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &orange_shrub
+  id: 34
+  name: orange_shrub
+  width: 7
+  height: 10
+  image: Images/orange_shrub.png
+  animationTemplate: *harvest
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &crystal
+  id: 35
+  name: crystal
+  width: 17
+  height: 16
+  image: Images/crystal.png
+  animationTemplate: *harvest
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &gilded_stone
+  id: 36
+  name: gilded_stone
+  width: 15
+  height: 9
+  image: Images/gilded_stone.png
+  animationTemplate: *harvest
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &iron_musket02
+  id: 37
+  name: iron_musket
+  width: 8
+  height: 8
+  image: Images/iron_musket.png
+  animationTemplate: *quadirectional_single_image_equipment
+  equipmentOffset: *iron_musket
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &metal_ball
+  id: 38
+  name: metal_ball
+  width: 2
+  height: 2
+  image: Images/metal_ball.png
+  animationTemplate: *rotating_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &iron_katana02
+  id: 39
+  name: iron_katana
+  width: 3
+  height: 8
+  image: Images/iron_katana.png
+  animationTemplate: *bidirectional_single_image_equipment
+  equipmentOffset: *iron_katana
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &iron_katana_hit
+  id: 40
+  name: iron_katana_hit
+  width: 3
+  height: 7
+  image: Images/iron_katana_hit.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &iron_sword02
+  id: 41
+  name: iron_sword
+  width: 3
+  height: 7
+  image: Images/iron_sword.png
+  animationTemplate: *single_image_equipment
+  equipmentOffset: *iron_sword
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &sword_hit
+  id: 42
+  name: sword_hit
+  width: 4
+  height: 1
+  image: Images/iron_sword_hit.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &light_iron_armor
+  id: 43
+  name: light_iron_armor
+  width: 7
+  height: 8
+  image: Images/light_iron_armor.png
+  animationTemplate: *character
+  equipmentOffset: *character02
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &iron_armor
+  id: 44
+  name: iron_armor
+  width: 7
+  height: 8
+  image: Images/iron_armor.png
+  animationTemplate: *character
+  equipmentOffset: *character02
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &healing_radius
+  id: 45
+  name: healing_radius
+  width: 32
+  height: 32
+  image: Images/healing_circle.png
+  animationTemplate: *healing_circle
+  equipmentOffset: null
+  heightOffset: 16.0
+  shadow: false
+  shadowResizing: 0
+- &fae_wand
+  id: 46
+  name: fae_wand
+  width: 3
+  height: 6
+  image: Images/fae_wand.png
+  animationTemplate: *single_image_equipment
+  equipmentOffset: *wand
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &fae_wand_projectile
+  id: 47
+  name: fae_wand_projectile
+  width: 3
+  height: 3
+  image: Images/fae_wand_bullet.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &iron_slingshot
+  id: 48
+  name: iron_slingshot
+  width: 4
+  height: 4
+  image: Images/iron_slingshot.png
+  animationTemplate: *bidirectional_single_image_equipment
+  equipmentOffset: *slingshot
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &orange_plot
+  id: 49
+  name: orange_plot
+  width: 7
+  height: 12
+  image: Images/orange_plot.png
+  animationTemplate: *harvest
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &infested_plot
+  id: 50
+  name: infested_plot
+  width: 7
+  height: 12
+  image: Images/silk_worm_infested_plot.png
+  animationTemplate: *harvest
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+effects:
+- &wood_staff_strike02
+  id: 0
+  name: wood_staff_strike
+  spriteSheet: *wood_staff_strike
+  orientation: MOVING_ANGLE
+  drawDepth: NORMAL
+  solid: true
+  duration: 200
+  entityCollisionRadius: 0.8
+  mapCollisionRadius: 0.6
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 16.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: true
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 1
+        base: 15.0
+        statMultipliers:
+        - {statType: STRENGTH, multiplier: 1.0}
+        - {statType: AGILITY, multiplier: 0.7}
+      applyToStructures: false
+      attributes: {bypassInvincibility: false, trueDamage: false}
+  repeatFollowingElements:
+    id: 0
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &wood_bow_arrow
+  id: 1
+  name: wood_bow_arrow
+  spriteSheet: *crude_arrow
+  orientation: MOVING_ANGLE
+  drawDepth: NORMAL
+  solid: true
+  duration: 900
+  entityCollisionRadius: 0.6
+  mapCollisionRadius: 0.4
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 20.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: false
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 3
+        base: 12.0
+        statMultipliers:
+        - {statType: AGILITY, multiplier: 0.8}
+      applyToStructures: false
+      attributes: {bypassInvincibility: false, trueDamage: false}
+  repeatFollowingElements:
+    id: 2
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &kendo_stick03
+  id: 2
+  name: kendo_stick
+  spriteSheet: *kendo_stick_swing
+  orientation: MOVING_ANGLE
+  drawDepth: NORMAL
+  solid: true
+  duration: 300
+  entityCollisionRadius: 0.8
+  mapCollisionRadius: 0.6
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 17.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: false
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 14
+        base: 18.0
+        statMultipliers:
+        - {statType: STRENGTH, multiplier: 1.0}
+        - {statType: AGILITY, multiplier: 0.75}
+      applyToStructures: false
+      attributes: {bypassInvincibility: false, trueDamage: true}
+  repeatFollowingElements:
+    id: 13
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &slingshot1
+  id: 3
+  name: slingshot1
+  spriteSheet: *pebble
+  orientation: STATIC
+  drawDepth: NORMAL
+  solid: false
+  duration: 500
+  entityCollisionRadius: 0.5
+  mapCollisionRadius: 0.3
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 17.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: true
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 16
+        base: 8.0
+        statMultipliers:
+        - {statType: AGILITY, multiplier: 1.0}
+      applyToStructures: false
+      attributes: {bypassInvincibility: false, trueDamage: false}
+    - !!StunAlteration {targetType: TARGET, duration: 300}
+  repeatFollowingElements:
+    id: 15
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &reinforced_bow02
+  id: 4
+  name: reinforced_bow
+  spriteSheet: *crude_arrow
+  orientation: MOVING_ANGLE
+  drawDepth: NORMAL
+  solid: true
+  duration: 900
+  entityCollisionRadius: 0.6
+  mapCollisionRadius: 0.4
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 24.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: false
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 19
+        base: 16.0
+        statMultipliers:
+        - {statType: AGILITY, multiplier: 0.9}
+      applyToStructures: false
+      attributes: {bypassInvincibility: false, trueDamage: false}
+  repeatFollowingElements:
+    id: 18
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &reinforced_bow_special
+  id: 5
+  name: reinforced_bow_special
+  spriteSheet: *crude_arrow
+  orientation: MOVING_ANGLE
+  drawDepth: NORMAL
+  solid: true
+  duration: 900
+  entityCollisionRadius: 0.6
+  mapCollisionRadius: 0.4
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 30.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: false
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 21
+        base: 20.0
+        statMultipliers:
+        - {statType: AGILITY, multiplier: 1.0}
+      applyToStructures: false
+      attributes: {bypassInvincibility: false, trueDamage: true}
+    - !!StunAlteration {targetType: TARGET, duration: 1000}
+  repeatFollowingElements:
+    id: 20
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &fae_bullet02
+  id: 6
+  name: fae_bullet
+  spriteSheet: *fae_bullet
+  orientation: STATIC
+  drawDepth: NORMAL
+  solid: true
+  duration: 500
+  entityCollisionRadius: 0.5
+  mapCollisionRadius: 0.5
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 18.0, relative: true, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: true
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 23
+        base: 5.0
+        statMultipliers:
+        - {statType: INTELLIGENCE, multiplier: 1.0}
+      applyToStructures: true
+      attributes: {bypassInvincibility: false, trueDamage: false}
+  repeatFollowingElements:
+    id: 22
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &sealing_needle02
+  id: 7
+  name: sealing_needle
+  spriteSheet: *sealing_needle
+  orientation: MOVING_ANGLE
+  drawDepth: NORMAL
+  solid: true
+  duration: 500
+  entityCollisionRadius: 0.6
+  mapCollisionRadius: 0.4
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 16.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: true
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 26
+        base: 10.0
+        statMultipliers:
+        - {statType: AGILITY, multiplier: 0.5}
+        - {statType: INTELLIGENCE, multiplier: 0.75}
+      applyToStructures: false
+      attributes: {bypassInvincibility: false, trueDamage: false}
+  repeatFollowingElements:
+    id: 24
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &sealing_amulet02
+  id: 8
+  name: sealing_amulet
+  spriteSheet: *sealing_amulet
+  orientation: MOVING_ANGLE
+  drawDepth: NORMAL
+  solid: true
+  duration: 500
+  entityCollisionRadius: 0.8
+  mapCollisionRadius: 0.6
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 16.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: true
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 27
+        base: 5.0
+        statMultipliers:
+        - {statType: STRENGTH, multiplier: 0.5}
+        - {statType: INTELLIGENCE, multiplier: 0.75}
+      applyToStructures: true
+      attributes: {bypassInvincibility: false, trueDamage: false}
+    - !!StunAlteration {targetType: TARGET, duration: 1000}
+  repeatFollowingElements:
+    id: 25
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- id: 9
+  name: mana_spawn
+  spriteSheet: null
+  orientation: STATIC
+  drawDepth: NORMAL
+  solid: false
+  duration: 1000
+  entityCollisionRadius: 0.0
+  mapCollisionRadius: 0.0
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 0.0, relative: false, destroyAtTargetPosition: false}
+  targets: []
+  repeatFollowingElements:
+    id: 32
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations:
+  - !!FollowingElementAlteration
+    targetType: ORIGIN
+    followingElement: !!FollowingCreature
+      creature: &haha03
+        id: 2
+        name: haha
+        spriteSheet: *none
+        collisionRadius: 0.0
+        strength: 0.0
+        agility: 0.0
+        intelligence: 0.0
+        solid: true
+        behaviorSet: &haha02
+          id: 2
+          name: haha
+          behaviors:
+          - !!DoNothingBehavior
+            id: 0
+            name: haha
+            changeConditions: []
+            abilityToUseId: 0
+            targetType: NONE
+        itemReward: &haha
+          id: 7
+          name: haha
+          entries:
+          - itemStack: !!ItemStack
+              item: &mana_core !!EdibleItem
+                id: 42
+                name: mana_core
+                maxStackSize: 1
+                frame: {x: 2, y: 5}
+                image: Images/items.png
+                duration: 0
+                alterations:
+                - !!RepeatAlteration
+                  targetType: TARGET
+                  duration: 0
+                  stackPolicy: REPLACE
+                  numberOfRepeat: 999999999
+                  interval: 10000
+                  alteration: !!AddItemAlteration
+                    targetType: TARGET
+                    repeat:
+                      id: 31
+                      base: 2.0
+                      statMultipliers:
+                      - {statType: INTELLIGENCE, multiplier: 0.25}
+                    itemStacks:
+                      backingArray:
+                      - probability: 1.0
+                        element: !!ItemStack
+                          item: &mana !!ResourceItem
+                            id: 43
+                            name: mana
+                            maxStackSize: 9999999
+                            frame: {x: 2, y: 5}
+                            image: Images/items.png
+                          quantity: 1
+                    dropRemainder: true
+              quantity: 1
+            probability: 1.0
+        abilitySet: null
+        lifetime: 1
+        inventorySize: 0
+      owned: true
+      strengthBonus:
+        id: 40
+        base: 0.0
+        statMultipliers: []
+      agilityBonus:
+        id: 41
+        base: 1.0
+        statMultipliers:
+        - {statType: AGILITY, multiplier: 2.0}
+      intelligenceBonus:
+        id: 42
+        base: 0.0
+        statMultipliers: []
+- &musket_ball
+  id: 10
+  name: musket_ball
+  spriteSheet: *metal_ball
+  orientation: MOVING_ANGLE
+  drawDepth: NORMAL
+  solid: false
+  duration: 1000
+  entityCollisionRadius: 0.7
+  mapCollisionRadius: 0.5
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 30.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: false
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 37
+        base: 25.0
+        statMultipliers:
+        - {statType: AGILITY, multiplier: 1.2}
+        - {statType: INTELLIGENCE, multiplier: 0.2}
+      applyToStructures: true
+      attributes: {bypassInvincibility: false, trueDamage: false}
+  repeatFollowingElements:
+    id: 36
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &iron_katana_hit02
+  id: 11
+  name: iron_katana_hit
+  spriteSheet: *iron_katana_hit
+  orientation: MOVING_ANGLE
+  drawDepth: NORMAL
+  solid: true
+  duration: 300
+  entityCollisionRadius: 1.0
+  mapCollisionRadius: 0.7
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 19.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: false
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 40
+        base: 24.0
+        statMultipliers:
+        - {statType: STRENGTH, multiplier: 1.0}
+        - {statType: AGILITY, multiplier: 0.75}
+      applyToStructures: true
+      attributes: {bypassInvincibility: false, trueDamage: true}
+    - !!DelayedAlteration
+      targetType: TARGET
+      duration: 1000
+      stackPolicy: REPLACE
+      alteration: !!InstantDamageAlteration
+        targetType: TARGET
+        amount:
+          id: 47
+          base: 5.0
+          statMultipliers:
+          - {statType: STRENGTH, multiplier: 1.0}
+          - {statType: AGILITY, multiplier: 0.5}
+        applyToStructures: true
+        attributes: {bypassInvincibility: false, trueDamage: true}
+    - !!DelayedAlteration
+      targetType: TARGET
+      duration: 2000
+      stackPolicy: REPLACE
+      alteration: !!InstantDamageAlteration
+        targetType: TARGET
+        amount:
+          id: 52
+          base: 5.0
+          statMultipliers:
+          - {statType: STRENGTH, multiplier: 1.0}
+          - {statType: AGILITY, multiplier: 0.5}
+        applyToStructures: true
+        attributes: {bypassInvincibility: false, trueDamage: true}
+    - !!DelayedAlteration
+      targetType: TARGET
+      duration: 3000
+      stackPolicy: REPLACE
+      alteration: !!InstantDamageAlteration
+        targetType: TARGET
+        amount:
+          id: 53
+          base: 5.0
+          statMultipliers:
+          - {statType: STRENGTH, multiplier: 1.0}
+          - {statType: AGILITY, multiplier: 0.5}
+        applyToStructures: true
+        attributes: {bypassInvincibility: false, trueDamage: true}
+    - !!DelayedAlteration
+      targetType: TARGET
+      duration: 4000
+      stackPolicy: REPLACE
+      alteration: !!InstantDamageAlteration
+        targetType: TARGET
+        amount:
+          id: 54
+          base: 5.0
+          statMultipliers:
+          - {statType: STRENGTH, multiplier: 1.0}
+          - {statType: AGILITY, multiplier: 0.5}
+        applyToStructures: true
+        attributes: {bypassInvincibility: false, trueDamage: true}
+    - !!DelayedAlteration
+      targetType: TARGET
+      duration: 5000
+      stackPolicy: REPLACE
+      alteration: !!InstantDamageAlteration
+        targetType: TARGET
+        amount:
+          id: 55
+          base: 5.0
+          statMultipliers:
+          - {statType: STRENGTH, multiplier: 1.0}
+          - {statType: AGILITY, multiplier: 0.5}
+        applyToStructures: true
+        attributes: {bypassInvincibility: false, trueDamage: true}
+  repeatFollowingElements:
+    id: 39
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- id: 12
+  name: iron_sword_hit
+  spriteSheet: *sword_hit
+  orientation: STATIC
+  drawDepth: NORMAL
+  solid: true
+  duration: 400
+  entityCollisionRadius: 0.7
+  mapCollisionRadius: 0.5
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 16.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: true
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 42
+        base: 30.0
+        statMultipliers:
+        - {statType: STRENGTH, multiplier: 1.25}
+      applyToStructures: true
+      attributes: {bypassInvincibility: false, trueDamage: false}
+  repeatFollowingElements:
+    id: 41
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &healing_tome
+  id: 13
+  name: healing_tome
+  spriteSheet: *healing_radius
+  orientation: STATIC
+  drawDepth: BACKGROUND
+  solid: false
+  duration: 1400
+  entityCollisionRadius: 2.0
+  mapCollisionRadius: 1.0
+  movement: !!BoundEffectMovement {distance: 0.0}
+  targets:
+  - targetType: ALL_ALLIES
+    destroyWhenCollide: false
+    alterations:
+    - !!InstantHealAlteration
+      targetType: TARGET
+      amount:
+        id: 45
+        base: 30.0
+        statMultipliers:
+        - {statType: INTELLIGENCE, multiplier: 1.5}
+    - !!RepeatAlteration
+      targetType: TARGET
+      duration: 0
+      stackPolicy: REPLACE
+      numberOfRepeat: 20
+      interval: 500
+      alteration: !!InstantHealAlteration
+        targetType: TARGET
+        amount:
+          id: 53
+          base: 3.0
+          statMultipliers:
+          - {statType: INTELLIGENCE, multiplier: 0.5}
+  repeatFollowingElements:
+    id: 43
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &fae_wand02
+  id: 14
+  name: fae_wand
+  spriteSheet: *fae_wand_projectile
+  orientation: MOVING_ANGLE
+  drawDepth: NORMAL
+  solid: true
+  duration: 1400
+  entityCollisionRadius: 0.8
+  mapCollisionRadius: 0.6
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 15.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: true
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 47
+        base: 16.0
+        statMultipliers:
+        - {statType: INTELLIGENCE, multiplier: 1.2}
+      applyToStructures: true
+      attributes: {bypassInvincibility: false, trueDamage: false}
+  repeatFollowingElements:
+    id: 46
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &iron_slingshot02
+  id: 15
+  name: iron_slingshot
+  spriteSheet: *metal_ball
+  orientation: STATIC
+  drawDepth: NORMAL
+  solid: true
+  duration: 600
+  entityCollisionRadius: 0.6
+  mapCollisionRadius: 0.4
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 17.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: true
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 50
+        base: 12.0
+        statMultipliers:
+        - {statType: AGILITY, multiplier: 1.0}
+      applyToStructures: true
+      attributes: {bypassInvincibility: false, trueDamage: false}
+    - !!StunAlteration {targetType: TARGET, duration: 450}
+  repeatFollowingElements:
+    id: 49
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+items:
+- &log !!ResourceItem
+  id: 0
+  name: log
+  maxStackSize: 50
+  frame: {x: 0, y: 0}
+  image: Images/items.png
+- &grass_tuft !!ResourceItem
+  id: 1
+  name: grass_tuft
+  maxStackSize: 30
+  frame: {x: 1, y: 0}
+  image: Images/items.png
+- &wheat !!ResourceItem
+  id: 2
+  name: wheat
+  maxStackSize: 20
+  frame: {x: 2, y: 0}
+  image: Images/items.png
+- &string !!ResourceItem
+  id: 3
+  name: string
+  maxStackSize: 50
+  frame: {x: 3, y: 0}
+  image: Images/items.png
+- &leaf !!ResourceItem
+  id: 4
+  name: leaf
+  maxStackSize: 40
+  frame: {x: 7, y: 0}
+  image: Images/items.png
+- &crude_arrow02 !!ResourceItem
+  id: 5
+  name: crude_arrow
+  maxStackSize: 200
+  frame: {x: 0, y: 1}
+  image: Images/items.png
+- &wood_staff03 !!WeaponItem
+  id: 6
+  name: wood_staff
+  maxStackSize: 1
+  frame: {x: 6, y: 0}
+  image: Images/items.png
+  statModifiers: []
+  spriteSheet: *wood_staff02
+  baseAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 800
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *wood_staff_strike02
+    ammunition: null
+  specialAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 10000
+    alterations:
+    - !!StunAlteration {targetType: TARGET, duration: 5000}
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 5000
+      stackPolicy: STACK
+      statModifier: {statType: STRENGTH, operationType: ADDITIVE, value: 10.0}
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 5000
+      stackPolicy: STACK
+      statModifier: {statType: ARMOR, operationType: ADDITIVE, value: 0.1}
+    ammunition: !!ItemStack
+      item: *mana
+      quantity: 5
+- &wood_bow02 !!WeaponItem
+  id: 7
+  name: wood_bow
+  maxStackSize: 1
+  frame: {x: 5, y: 0}
+  image: Images/items.png
+  statModifiers: []
+  spriteSheet: *wood_bow
+  baseAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 700
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *wood_bow_arrow
+    ammunition: !!ItemStack
+      item: *crude_arrow02
+      quantity: 1
+  specialAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 0
+    alterations: []
+    ammunition: null
+- &dough !!ResourceItem
+  id: 8
+  name: dough
+  maxStackSize: 20
+  frame: {x: 1, y: 1}
+  image: Images/items.png
+- &apple !!EdibleItem
+  id: 9
+  name: apple
+  maxStackSize: 20
+  frame: {x: 2, y: 1}
+  image: Images/items.png
+  duration: 1000
+  alterations:
+  - !!InstantEatAlteration
+    targetType: TARGET
+    amount:
+      id: 4
+      base: 10.0
+      statMultipliers: []
+  - !!InstantHealAlteration
+    targetType: TARGET
+    amount:
+      id: 7
+      base: 1.0
+      statMultipliers: []
+- &bread !!EdibleItem
+  id: 10
+  name: bread
+  maxStackSize: 10
+  frame: {x: 4, y: 0}
+  image: Images/items.png
+  duration: 2500
+  alterations:
+  - !!InstantEatAlteration
+    targetType: TARGET
+    amount:
+      id: 8
+      base: 25.0
+      statMultipliers: []
+- &apple_pie !!EdibleItem
+  id: 11
+  name: apple_pie
+  maxStackSize: 5
+  frame: {x: 3, y: 1}
+  image: Images/items.png
+  duration: 6000
+  alterations:
+  - !!InstantEatAlteration
+    targetType: TARGET
+    amount:
+      id: 9
+      base: 35.0
+      statMultipliers: []
+  - !!InstantHealAlteration
+    targetType: TARGET
+    amount:
+      id: 11
+      base: 0.0
+      statMultipliers:
+      - {statType: MAX_HEALTH, multiplier: 0.5}
+- &campfire02 !!StructureItem
+  id: 12
+  name: campfire
+  maxStackSize: 1
+  frame: {x: 4, y: 1}
+  image: Images/items.png
+  structure: &campfire03 !!FactoryStructure
+    id: 2
+    name: campfire
+    solid: true
+    spriteSheet: *campfire
+    randomHorizontalFlip: false
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 150000
+    bannedTiles:
+    - &water
+      id: 1
+      name: water
+      solid: false
+      velocityFactor: 0.3
+      frames:
+      - {x: 1, y: 0}
+      - {x: 2, y: 0}
+      - {x: 3, y: 0}
+      - {x: 4, y: 0}
+      image: Images/tiles.png
+    lightEmissionRadius: 8.0
+    deconstructionDuration: 0
+    maxHealth: 0.0
+    workingSpriteSheet: null
+    recipeSize: 2
+    fuelSize: 1
+    resultSize: 2
+    fuels:
+    - item: *log
+      amount: 2.0
+    crafts:
+    - recipes:
+      - item: *dough
+        quantity: 3
+      - item: *apple
+        quantity: 4
+      results:
+      - item: *apple_pie
+        quantity: 1
+      duration: 10000
+      fuelConsumption: 1.0
+    - recipes:
+      - item: *dough
+        quantity: 1
+      results:
+      - item: *bread
+        quantity: 1
+      duration: 5000
+      fuelConsumption: 1.0
+    - recipes:
+      - item: &uncooked_meat !!ResourceItem
+          id: 14
+          name: uncooked_meat
+          maxStackSize: 20
+          frame: {x: 3, y: 3}
+          image: Images/items.png
+        quantity: 1
+      results:
+      - item: &cooked_meat !!EdibleItem
+          id: 15
+          name: cooked_meat
+          maxStackSize: 20
+          frame: {x: 4, y: 3}
+          image: Images/items.png
+          duration: 3500
+          alterations:
+          - !!InstantEatAlteration
+            targetType: TARGET
+            amount:
+              id: 12
+              base: 55.0
+              statMultipliers: []
+        quantity: 1
+      duration: 5000
+      fuelConsumption: 1.0
+    itemHandlingOnDeath: DROP
+- &culinary_table03 !!StructureItem
+  id: 13
+  name: culinary_table
+  maxStackSize: 1
+  frame: {x: 5, y: 1}
+  image: Images/items.png
+  structure: &culinary_table02 !!Structure
+    id: 3
+    name: culinary_table
+    solid: true
+    spriteSheet: *culinary_table
+    randomHorizontalFlip: false
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 0
+    bannedTiles:
+    - *water
+    - &deep_water
+      id: 3
+      name: deep_water
+      solid: true
+      velocityFactor: 1.0
+      frames:
+      - {x: 1, y: 1}
+      - {x: 2, y: 1}
+      - {x: 3, y: 1}
+      - {x: 4, y: 1}
+      image: Images/tiles.png
+    lightEmissionRadius: 0.0
+    deconstructionDuration: 5000
+    maxHealth: 0.0
+- *uncooked_meat
+- *cooked_meat
+- &kendo_stick04 !!WeaponItem
+  id: 16
+  name: kendo_stick
+  maxStackSize: 1
+  frame: {x: 6, y: 3}
+  image: Images/items.png
+  statModifiers: []
+  spriteSheet: *kendo_stick02
+  baseAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 600
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *kendo_stick03
+    ammunition: null
+  specialAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 10000
+    alterations:
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 7000
+      stackPolicy: STACK
+      statModifier: {statType: SPEED, operationType: ADDITIVE, value: 0.5}
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 7000
+      stackPolicy: STACK
+      statModifier: {statType: AGILITY, operationType: ADDITIVE, value: 5.0}
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 7000
+      stackPolicy: STACK
+      statModifier: {statType: STRENGTH, operationType: ADDITIVE, value: 5.0}
+    ammunition: !!ItemStack
+      item: *mana
+      quantity: 10
+- &reinforced_bow03 !!WeaponItem
+  id: 17
+  name: reinforced_bow
+  maxStackSize: 1
+  frame: {x: 5, y: 3}
+  image: Images/items.png
+  statModifiers: []
+  spriteSheet: *reinforced_bow
+  baseAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 800
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *reinforced_bow02
+    ammunition: !!ItemStack
+      item: *crude_arrow02
+      quantity: 1
+  specialAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 5000
+    alterations:
+    - !!StunAlteration {targetType: TARGET, duration: 500}
+    - !!DelayedAlteration
+      targetType: TARGET
+      duration: 500
+      stackPolicy: REPLACE
+      alteration: !!FollowingElementAlteration
+        targetType: TARGET
+        followingElement: !!FollowingEffect
+          offsetAngleEffect:
+            offsetAngle: 0.0
+            randomAngle: 0.0
+            effect: *reinforced_bow_special
+    ammunition: !!ItemStack
+      item: *crude_arrow02
+      quantity: 1
+- &rock !!ResourceItem
+  id: 18
+  name: rock
+  maxStackSize: 30
+  frame: {x: 6, y: 1}
+  image: Images/items.png
+- &fabric !!ResourceItem
+  id: 19
+  name: fabric
+  maxStackSize: 50
+  frame: {x: 6, y: 2}
+  image: Images/items.png
+- &leather !!ResourceItem
+  id: 20
+  name: leather
+  maxStackSize: 40
+  frame: {x: 0, y: 3}
+  image: Images/items.png
+- &iron_ore !!ResourceItem
+  id: 21
+  name: iron_ore
+  maxStackSize: 20
+  frame: {x: 7, y: 1}
+  image: Images/items.png
+- &coal !!ResourceItem
+  id: 22
+  name: coal
+  maxStackSize: 30
+  frame: {x: 1, y: 2}
+  image: Images/items.png
+- &iron_ingot !!ResourceItem
+  id: 23
+  name: iron_ingot
+  maxStackSize: 30
+  frame: {x: 7, y: 4}
+  image: Images/items.png
+- &etherium_crystal !!ResourceItem
+  id: 24
+  name: etherium crystal
+  maxStackSize: 40
+  frame: {x: 0, y: 4}
+  image: Images/items.png
+- &fae_dust !!ResourceItem
+  id: 25
+  name: fae_dust
+  maxStackSize: 50
+  frame: {x: 7, y: 3}
+  image: Images/items.png
+- &pebble02 !!ResourceItem
+  id: 26
+  name: pebble
+  maxStackSize: 150
+  frame: {x: 2, y: 3}
+  image: Images/items.png
+- &crafting_table02 !!StructureItem
+  id: 27
+  name: crafting_table
+  maxStackSize: 1
+  frame: {x: 3, y: 2}
+  image: Images/items.png
+  structure: &crafting_table03 !!Structure
+    id: 7
+    name: crafting_table
+    solid: true
+    spriteSheet: *crafting_table
+    randomHorizontalFlip: false
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 0
+    bannedTiles: []
+    lightEmissionRadius: 0.0
+    deconstructionDuration: 5000
+    maxHealth: 0.0
+- &forge02 !!StructureItem
+  id: 28
+  name: forge
+  maxStackSize: 1
+  frame: {x: 0, y: 2}
+  image: Images/items.png
+  structure: &forge03 !!FactoryStructure
+    id: 6
+    name: forge
+    solid: true
+    spriteSheet: *forge
+    randomHorizontalFlip: false
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 0
+    bannedTiles: []
+    lightEmissionRadius: 0.0
+    deconstructionDuration: 7000
+    maxHealth: 0.0
+    workingSpriteSheet: *forge_working
+    recipeSize: 2
+    fuelSize: 1
+    resultSize: 2
+    fuels:
+    - item: *coal
+      amount: 2.0
+    - item: *log
+      amount: 1.0
+    crafts:
+    - recipes:
+      - item: *iron_ore
+        quantity: 2
+      results:
+      - item: *iron_ingot
+        quantity: 1
+      duration: 4000
+      fuelConsumption: 2.0
+    - recipes:
+      - item: &holy_silver_ore !!ResourceItem
+          id: 52
+          name: holy_silver_ore
+          maxStackSize: 30
+          frame: {x: 2, y: 6}
+          image: Images/items.png
+        quantity: 2
+      results:
+      - item: &holy_silver_ingot !!ResourceItem
+          id: 53
+          name: holy_silver_ingot
+          maxStackSize: 20
+          frame: {x: 3, y: 6}
+          image: Images/items.png
+        quantity: 1
+      duration: 5300
+      fuelConsumption: 2.0
+    itemHandlingOnDeath: DROP
+- &chest02 !!StructureItem
+  id: 29
+  name: chest
+  maxStackSize: 1
+  frame: {x: 4, y: 2}
+  image: Images/items.png
+  structure: &chest03 !!InventoryStructure
+    id: 9
+    name: chest
+    solid: true
+    spriteSheet: *chest
+    randomHorizontalFlip: false
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 0
+    bannedTiles: []
+    lightEmissionRadius: 0.0
+    deconstructionDuration: 0
+    maxHealth: 0.0
+    openSpriteSheet: *chest_open
+    inventorySize: 20
+    itemHandlingOnDeath: DROP
+- &reinforced_wall02 !!StructureItem
+  id: 30
+  name: reinforced_wall
+  maxStackSize: 1
+  frame: {x: 5, y: 2}
+  image: Images/items.png
+  structure: &reinforced_wall03 !!Structure
+    id: 8
+    name: reinforced_wall
+    solid: true
+    spriteSheet: *reinforced_wall
+    randomHorizontalFlip: false
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 0
+    bannedTiles: []
+    lightEmissionRadius: 0.0
+    deconstructionDuration: 10000
+    maxHealth: 300.0
+- &wood_slingshot !!WeaponItem
+  id: 31
+  name: wood_slingshot
+  maxStackSize: 1
+  frame: {x: 7, y: 2}
+  image: Images/items.png
+  statModifiers: []
+  spriteSheet: *w_slingshot
+  baseAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 900
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *slingshot1
+    ammunition: !!ItemStack
+      item: *pebble02
+      quantity: 1
+  specialAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 2500
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: -0.08726646
+          randomAngle: 0.0
+          effect: *slingshot1
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *slingshot1
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.08726646
+          randomAngle: 0.0
+          effect: *slingshot1
+    ammunition: !!ItemStack
+      item: *pebble02
+      quantity: 3
+- &leather_armor02 !!ClothingItem
+  id: 32
+  name: leather_armor
+  maxStackSize: 1
+  frame: {x: 1, y: 3}
+  image: Images/items.png
+  statModifiers:
+  - {statType: AGILITY, operationType: ADDITIVE, value: 3.0}
+  - {statType: STRENGTH, operationType: ADDITIVE, value: 2.0}
+  spriteSheet: *leather_armor
+- &youkai_extermination_kit03 !!WeaponItem
+  id: 33
+  name: youkai_extermination_kit
+  maxStackSize: 1
+  frame: {x: 2, y: 4}
+  image: Images/items.png
+  statModifiers: []
+  spriteSheet: *youkai_extermination_kit02
+  baseAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 300
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: -0.05235988
+          randomAngle: 0.0
+          effect: *sealing_needle02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *sealing_needle02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.05235988
+          randomAngle: 0.0
+          effect: *sealing_needle02
+    ammunition: null
+  specialAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 4700
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *sealing_amulet02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.08726646
+          randomAngle: 0.0
+          effect: *sealing_amulet02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: -0.08726646
+          randomAngle: 0.0
+          effect: *sealing_amulet02
+    ammunition: null
+- &gold_nugget !!ResourceItem
+  id: 34
+  name: gold_nugget
+  maxStackSize: 20
+  frame: {x: 6, y: 4}
+  image: Images/items.png
+- !!ResourceItem
+  id: 35
+  name: blank_rune
+  maxStackSize: 10
+  frame: {x: 4, y: 4}
+  image: Images/items.png
+- &wheat_seeds !!ResourceItem
+  id: 36
+  name: wheat_seeds
+  maxStackSize: 50
+  frame: {x: 2, y: 2}
+  image: Images/items.png
+- &magic_forge02 !!StructureItem
+  id: 37
+  name: magic_forge
+  maxStackSize: 1
+  frame: {x: 5, y: 4}
+  image: Images/items.png
+  structure: &magic_forge03 !!FactoryStructure
+    id: 10
+    name: magic_forge
+    solid: true
+    spriteSheet: *magic_forge
+    randomHorizontalFlip: false
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 0
+    bannedTiles: []
+    lightEmissionRadius: 4.0
+    deconstructionDuration: 0
+    maxHealth: 0.0
+    workingSpriteSheet: null
+    recipeSize: 2
+    fuelSize: 1
+    resultSize: 1
+    fuels:
+    - item: *coal
+      amount: 1.0
+    crafts: []
+    itemHandlingOnDeath: DROP
+- &blessing !!ResourceItem
+  id: 38
+  name: blessing
+  maxStackSize: 20
+  frame: {x: 0, y: 5}
+  image: Images/items.png
+- &wheat_seed_bag !!StructureItem
+  id: 39
+  name: wheat_seed_bag
+  maxStackSize: 1
+  frame: {x: 3, y: 4}
+  image: Images/items.png
+  structure: &wheat_farm03 !!HarvestableStructure
+    id: 11
+    name: wheat_farm
+    solid: false
+    spriteSheet: *wheat_farm
+    randomHorizontalFlip: true
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 0
+    bannedTiles:
+    - *water
+    - *deep_water
+    - &sand
+      id: 2
+      name: sand
+      solid: false
+      velocityFactor: 1.0
+      frames:
+      - {x: 5, y: 0}
+      image: Images/tiles.png
+    - &mountain
+      id: 5
+      name: mountain
+      solid: false
+      velocityFactor: 1.0
+      frames:
+      - {x: 5, y: 1}
+      image: Images/tiles.png
+    - &etherium_mountain
+      id: 9
+      name: etherium_mountain
+      solid: false
+      velocityFactor: 1.0
+      frames:
+      - {x: 1, y: 2}
+      image: Images/tiles.png
+    - &crystal_sand
+      id: 11
+      name: crystal_sand
+      solid: false
+      velocityFactor: 1.0
+      frames:
+      - {x: 3, y: 2}
+      image: Images/tiles.png
+    lightEmissionRadius: 0.0
+    deconstructionDuration: 0
+    maxHealth: 0.0
+    harvestingTime: 0
+    itemReward: &wheat_farm02
+      id: 6
+      name: wheat_farm
+      entries:
+      - itemStack: !!ItemStack
+          item: *wheat
+          quantity: 2
+        probability: 1.0
+      - itemStack: !!ItemStack
+          item: *wheat
+          quantity: 1
+        probability: 0.75
+      - itemStack: !!ItemStack
+          item: *grass_tuft
+          quantity: 1
+        probability: 0.5
+      - itemStack: !!ItemStack
+          item: *grass_tuft
+          quantity: 1
+        probability: 0.25
+      - itemStack: !!ItemStack
+          item: *wheat_seeds
+          quantity: 1
+        probability: 0.25
+      - itemStack: !!ItemStack
+          item: *wheat_seeds
+          quantity: 1
+        probability: 0.125
+    regrowthTime: {min: 300000, max: 540000}
+- &paper !!ResourceItem
+  id: 40
+  name: paper
+  maxStackSize: 30
+  frame: {x: 1, y: 5}
+  image: Images/items.png
+- !!AccessoryItem
+  id: 41
+  name: test_accessory
+  maxStackSize: 1
+  frame: {x: 0, y: 0}
+  image: Images/items.png
+  statModifiers:
+  - {statType: STRENGTH, operationType: ADDITIVE, value: 300.0}
+  - {statType: AGILITY, operationType: ADDITIVE, value: 300.0}
+  - {statType: INTELLIGENCE, operationType: ADDITIVE, value: 300.0}
+  - {statType: MAX_HEALTH, operationType: ADDITIVE, value: 500.0}
+  - {statType: SPEED, operationType: ADDITIVE, value: 1.0}
+  - {statType: ARMOR, operationType: ADDITIVE, value: 1.0}
+  ability: !!ItemAlterationAbility
+    id: 0
+    cooldown: 0
+    alterations: []
+    ammunition: null
+- *mana_core
+- *mana
+- &sulphur !!ResourceItem
+  id: 44
+  name: sulphur
+  maxStackSize: 30
+  frame: {x: 4, y: 5}
+  image: Images/items.png
+- &gunpowder !!ResourceItem
+  id: 45
+  name: gunpowder
+  maxStackSize: 40
+  frame: {x: 5, y: 5}
+  image: Images/items.png
+- &etherium_log !!ResourceItem
+  id: 46
+  name: etherium_log
+  maxStackSize: 50
+  frame: {x: 7, y: 5}
+  image: Images/items.png
+- !!ResourceItem
+  id: 47
+  name: golem_core
+  maxStackSize: 5
+  frame: {x: 1, y: 6}
+  image: Images/items.png
+- &orange_seeds !!ResourceItem
+  id: 48
+  name: orange_seeds
+  maxStackSize: 50
+  frame: {x: 0, y: 6}
+  image: Images/items.png
+- &orange !!EdibleItem
+  id: 49
+  name: orange
+  maxStackSize: 15
+  frame: {x: 6, y: 5}
+  image: Images/items.png
+  duration: 1500
+  alterations:
+  - !!InstantEatAlteration
+    targetType: TARGET
+    amount:
+      id: 33
+      base: 15.0
+      statMultipliers: []
+  - !!InstantHealAlteration
+    targetType: TARGET
+    amount:
+      id: 35
+      base: 10.0
+      statMultipliers: []
+- &metal_ball02 !!ResourceItem
+  id: 50
+  name: metal_ball
+  maxStackSize: 50
+  frame: {x: 4, y: 7}
+  image: Images/items.png
+- &silk_string !!ResourceItem
+  id: 51
+  name: silk_string
+  maxStackSize: 40
+  frame: {x: 6, y: 7}
+  image: Images/items.png
+- *holy_silver_ore
+- *holy_silver_ingot
+- &paper_cartridge !!ResourceItem
+  id: 54
+  name: paper_cartridge
+  maxStackSize: 20
+  frame: {x: 5, y: 7}
+  image: Images/items.png
+- &iron_musket03 !!WeaponItem
+  id: 55
+  name: iron_musket
+  maxStackSize: 1
+  frame: {x: 6, y: 6}
+  image: Images/items.png
+  statModifiers: []
+  spriteSheet: *iron_musket02
+  baseAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 3000
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.017453292
+          effect: *musket_ball
+    ammunition: !!ItemStack
+      item: *paper_cartridge
+      quantity: 1
+  specialAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 30000
+    alterations:
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 10000
+      stackPolicy: STACK
+      statModifier: {statType: AGILITY, operationType: ADDITIVE, value: 10.0}
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 10000
+      stackPolicy: STACK
+      statModifier: {statType: SPEED, operationType: ADDITIVE, value: -5.0}
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 10000
+      stackPolicy: REPLACE
+      statModifier: {statType: INTELLIGENCE, operationType: ADDITIVE, value: 5.0}
+    ammunition: !!ItemStack
+      item: *mana
+      quantity: 20
+- &iron_katana03 !!WeaponItem
+  id: 56
+  name: iron_katana
+  maxStackSize: 1
+  frame: {x: 4, y: 6}
+  image: Images/items.png
+  statModifiers: []
+  spriteSheet: *iron_katana02
+  baseAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 500
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *iron_katana_hit02
+    ammunition: null
+  specialAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 30000
+    alterations:
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 10000
+      stackPolicy: REPLACE
+      statModifier: {statType: STRENGTH, operationType: ADDITIVE, value: 5.0}
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 10000
+      stackPolicy: REPLACE
+      statModifier: {statType: AGILITY, operationType: ADDITIVE, value: 5.0}
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 10000
+      stackPolicy: REPLACE
+      statModifier: {statType: SPEED, operationType: ADDITIVE, value: 0.5}
+    ammunition: !!ItemStack
+      item: *mana
+      quantity: 10
+- &iron_sword03 !!WeaponItem
+  id: 57
+  name: iron_sword
+  maxStackSize: 1
+  frame: {x: 5, y: 6}
+  image: Images/items.png
+  statModifiers:
+  - {statType: AGILITY, operationType: ADDITIVE, value: -2.0}
+  spriteSheet: *iron_sword02
+  baseAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 800
+    alterations: []
+    ammunition: null
+  specialAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 0
+    alterations: []
+    ammunition: null
+- &healing_tome02 !!AccessoryItem
+  id: 58
+  name: healing_tome
+  maxStackSize: 1
+  frame: {x: 2, y: 8}
+  image: Images/items.png
+  statModifiers:
+  - {statType: INTELLIGENCE, operationType: ADDITIVE, value: 3.0}
+  - {statType: MAX_HEALTH, operationType: ADDITIVE, value: 10.0}
+  ability: !!ItemAlterationAbility
+    id: 0
+    cooldown: 6000
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *healing_tome
+    ammunition: !!ItemStack
+      item: *mana
+      quantity: 12
+- &grimoire_of_the_lost !!AccessoryItem
+  id: 59
+  name: grimoire_of_the_lost
+  maxStackSize: 1
+  frame: {x: 3, y: 8}
+  image: Images/items.png
+  statModifiers:
+  - {statType: INTELLIGENCE, operationType: ADDITIVE, value: 6.0}
+  ability: !!ItemAlterationAbility
+    id: 0
+    cooldown: 30000
+    alterations:
+    - !!StatAlteration
+      targetType: TARGET
+      duration: 10000
+      stackPolicy: STACK
+      statModifier: {statType: INTELLIGENCE, operationType: ADDITIVE, value: 10.0}
+    ammunition: !!ItemStack
+      item: *mana
+      quantity: 20
+- &light_iron_armor02 !!ClothingItem
+  id: 60
+  name: light_iron_armor
+  maxStackSize: 1
+  frame: {x: 1, y: 8}
+  image: Images/items.png
+  statModifiers:
+  - {statType: STRENGTH, operationType: ADDITIVE, value: 4.0}
+  - {statType: AGILITY, operationType: ADDITIVE, value: 4.0}
+  spriteSheet: *light_iron_armor
+- &iron_armor02 !!ClothingItem
+  id: 61
+  name: iron_armor
+  maxStackSize: 1
+  frame: {x: 5, y: 8}
+  image: Images/items.png
+  statModifiers:
+  - {statType: STRENGTH, operationType: ADDITIVE, value: 8.0}
+  - {statType: AGILITY, operationType: ADDITIVE, value: -2.0}
+  spriteSheet: *iron_armor
+- &fae_wand03 !!WeaponItem
+  id: 62
+  name: fae_wand
+  maxStackSize: 1
+  frame: {x: 3, y: 7}
+  image: Images/items.png
+  statModifiers: []
+  spriteSheet: *fae_wand
+  baseAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 900
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *fae_wand02
+    ammunition: !!ItemStack
+      item: *mana
+      quantity: 1
+  specialAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 0
+    alterations: []
+    ammunition: null
+- &iron_slingshot03 !!WeaponItem
+  id: 63
+  name: iron_slingshot
+  maxStackSize: 1
+  frame: {x: 0, y: 7}
+  image: Images/items.png
+  statModifiers: []
+  spriteSheet: *iron_slingshot
+  baseAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 1000
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *iron_slingshot02
+    ammunition: !!ItemStack
+      item: *metal_ball02
+      quantity: 1
+  specialAbility: !!ItemAlterationAbility
+    id: 0
+    cooldown: 3000
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.08726646
+          randomAngle: 0.034906585
+          effect: *iron_slingshot02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.034906585
+          effect: *iron_slingshot02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: -0.08726646
+          randomAngle: 0.034906585
+          effect: *iron_slingshot02
+    ammunition: !!ItemStack
+      item: *metal_ball02
+      quantity: 3
+- &silk_worm !!ResourceItem
+  id: 64
+  name: silk_worm
+  maxStackSize: 10
+  frame: {x: 6, y: 8}
+  image: Images/items.png
+- &orange_plot02 !!StructureItem
+  id: 65
+  name: orange_plot
+  maxStackSize: 1
+  frame: {x: 7, y: 8}
+  image: Images/items.png
+  structure: &orange_plot04 !!HarvestableStructure
+    id: 17
+    name: orange_plot
+    solid: true
+    spriteSheet: *orange_plot
+    randomHorizontalFlip: true
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 0
+    bannedTiles:
+    - *water
+    - *deep_water
+    - *sand
+    - *crystal_sand
+    - *mountain
+    - *etherium_mountain
+    lightEmissionRadius: 0.0
+    deconstructionDuration: 0
+    maxHealth: 0.0
+    harvestingTime: 2000
+    itemReward: &orange_plot03
+      id: 12
+      name: orange_plot
+      entries:
+      - itemStack: !!ItemStack
+          item: *orange
+          quantity: 1
+        probability: 1.0
+      - itemStack: !!ItemStack
+          item: *orange
+          quantity: 1
+        probability: 0.75
+      - itemStack: !!ItemStack
+          item: *orange
+          quantity: 1
+        probability: 0.25
+      - itemStack: !!ItemStack
+          item: *leaf
+          quantity: 1
+        probability: 0.5
+      - itemStack: !!ItemStack
+          item: *silk_worm
+          quantity: 1
+        probability: 0.01
+    regrowthTime: {min: 300000, max: 540000}
+- &infested_plot02 !!StructureItem
+  id: 66
+  name: infested_plot
+  maxStackSize: 1
+  frame: {x: 7, y: 8}
+  image: Images/items.png
+  structure: &infested_plot04 !!HarvestableStructure
+    id: 18
+    name: infested_plot
+    solid: true
+    spriteSheet: *infested_plot
+    randomHorizontalFlip: true
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 0
+    bannedTiles:
+    - *deep_water
+    - *water
+    - *sand
+    - *crystal_sand
+    - *mountain
+    - *etherium_mountain
+    lightEmissionRadius: 0.0
+    deconstructionDuration: 0
+    maxHealth: 0.0
+    harvestingTime: 3000
+    itemReward: &infested_plot03
+      id: 13
+      name: infested_plot
+      entries:
+      - itemStack: !!ItemStack
+          item: *silk_worm
+          quantity: 1
+        probability: 0.25
+      - itemStack: !!ItemStack
+          item: *silk_worm
+          quantity: 1
+        probability: 0.12
+      - itemStack: !!ItemStack
+          item: *silk_string
+          quantity: 1
+        probability: 1.0
+      - itemStack: !!ItemStack
+          item: *silk_string
+          quantity: 1
+        probability: 0.75
+      - itemStack: !!ItemStack
+          item: *silk_string
+          quantity: 1
+        probability: 0.5
+    regrowthTime: {min: 420000, max: 600000}
+itemCrafts:
+- id: 0
+  name: string
+  duration: 300
+  result: !!ItemStack
+    item: *string
+    quantity: 2
+  recipes:
+  - item: *grass_tuft
+    quantity: 3
+  discoveryItems: []
+  requiredStructure: null
+- id: 1
+  name: crude_arrow
+  duration: 600
+  result: !!ItemStack
+    item: *crude_arrow02
+    quantity: 5
+  recipes:
+  - item: *leaf
+    quantity: 2
+  - item: *log
+    quantity: 1
+  discoveryItems: []
+  requiredStructure: null
+- id: 2
+  name: wood_staff
+  duration: 3000
+  result: !!ItemStack
+    item: *wood_staff03
+    quantity: 1
+  recipes:
+  - item: *log
+    quantity: 3
+  - item: *string
+    quantity: 1
+  discoveryItems: []
+  requiredStructure: null
+- id: 3
+  name: wood_bow
+  duration: 4000
+  result: !!ItemStack
+    item: *wood_bow02
+    quantity: 1
+  recipes:
+  - item: *log
+    quantity: 4
+  - item: *string
+    quantity: 3
+  discoveryItems: []
+  requiredStructure: null
+- id: 4
+  name: dough
+  duration: 1000
+  result: !!ItemStack
+    item: *dough
+    quantity: 1
+  recipes:
+  - item: *wheat
+    quantity: 3
+  discoveryItems:
+  - *wheat
+  requiredStructure: *culinary_table02
+- id: 5
+  name: campfire
+  duration: 5000
+  result: !!ItemStack
+    item: *campfire02
+    quantity: 1
+  recipes:
+  - item: *log
+    quantity: 5
+  - item: *grass_tuft
+    quantity: 3
+  - item: *leaf
+    quantity: 4
+  discoveryItems: []
+  requiredStructure: null
+- id: 6
+  name: culinary_table
+  duration: 8000
+  result: !!ItemStack
+    item: *culinary_table03
+    quantity: 1
+  recipes:
+  - item: *log
+    quantity: 5
+  - item: *apple
+    quantity: 1
+  - item: *leaf
+    quantity: 1
+  - item: *string
+    quantity: 4
+  discoveryItems:
+  - *wheat
+  requiredStructure: null
+- id: 7
+  name: crafting_table
+  duration: 6000
+  result: !!ItemStack
+    item: *crafting_table02
+    quantity: 1
+  recipes:
+  - item: *log
+    quantity: 4
+  - item: *rock
+    quantity: 3
+  - item: *string
+    quantity: 6
+  discoveryItems: []
+  requiredStructure: null
+- id: 8
+  name: forge
+  duration: 8000
+  result: !!ItemStack
+    item: *forge02
+    quantity: 1
+  recipes:
+  - item: *rock
+    quantity: 14
+  discoveryItems:
+  - *rock
+  - *coal
+  requiredStructure: *crafting_table03
+- id: 9
+  name: chest
+  duration: 4000
+  result: !!ItemStack
+    item: *chest02
+    quantity: 1
+  recipes:
+  - item: *log
+    quantity: 6
+  - item: *iron_ingot
+    quantity: 2
+  discoveryItems:
+  - *iron_ingot
+  - *log
+  requiredStructure: *crafting_table03
+- id: 10
+  name: reinforced_wall
+  duration: 5000
+  result: !!ItemStack
+    item: *reinforced_wall02
+    quantity: 1
+  recipes:
+  - item: *rock
+    quantity: 4
+  - item: *log
+    quantity: 4
+  discoveryItems:
+  - *rock
+  requiredStructure: *crafting_table03
+- id: 11
+  name: reinforced_bow
+  duration: 4500
+  result: !!ItemStack
+    item: *reinforced_bow03
+    quantity: 1
+  recipes:
+  - item: *log
+    quantity: 6
+  - item: *leather
+    quantity: 2
+  - item: *string
+    quantity: 4
+  discoveryItems:
+  - *wood_bow02
+  requiredStructure: *crafting_table03
+- id: 12
+  name: kendo_stick
+  duration: 3000
+  result: !!ItemStack
+    item: *kendo_stick04
+    quantity: 1
+  recipes:
+  - item: *log
+    quantity: 2
+  - item: *leather
+    quantity: 1
+  - item: *string
+    quantity: 2
+  discoveryItems:
+  - *leather
+  requiredStructure: *crafting_table03
+- id: 13
+  name: leather_armor
+  duration: 5000
+  result: !!ItemStack
+    item: *leather_armor02
+    quantity: 1
+  recipes:
+  - item: *leather
+    quantity: 4
+  - item: *fabric
+    quantity: 3
+  - item: *string
+    quantity: 6
+  discoveryItems:
+  - *leather
+  requiredStructure: *crafting_table03
+- id: 14
+  name: w_slingshot
+  duration: 2000
+  result: !!ItemStack
+    item: *wood_slingshot
+    quantity: 1
+  recipes:
+  - item: *string
+    quantity: 1
+  - item: *log
+    quantity: 1
+  - item: *leaf
+    quantity: 1
+  discoveryItems: []
+  requiredStructure: null
+- id: 15
+  name: pebble
+  duration: 1300
+  result: !!ItemStack
+    item: *pebble02
+    quantity: 3
+  recipes:
+  - item: *rock
+    quantity: 1
+  discoveryItems:
+  - *rock
+  requiredStructure: null
+- id: 16
+  name: magic_forge
+  duration: 12000
+  result: !!ItemStack
+    item: *magic_forge02
+    quantity: 1
+  recipes:
+  - item: *etherium_crystal
+    quantity: 1
+  - item: *holy_silver_ingot
+    quantity: 4
+  - item: *rock
+    quantity: 6
+  - item: *fae_dust
+    quantity: 4
+  discoveryItems:
+  - *etherium_crystal
+  - *fae_dust
+  requiredStructure: *crafting_table03
+- id: 17
+  name: wheat_seed_bag
+  duration: 1000
+  result: !!ItemStack
+    item: *wheat_seed_bag
+    quantity: 1
+  recipes:
+  - item: *wheat_seeds
+    quantity: 5
+  - item: *fabric
+    quantity: 2
+  - item: *string
+    quantity: 1
+  discoveryItems:
+  - *wheat_seeds
+  requiredStructure: null
+- id: 18
+  name: youkai_extermination_kit
+  duration: 5000
+  result: !!ItemStack
+    item: *youkai_extermination_kit03
+    quantity: 1
+  recipes:
+  - item: *blessing
+    quantity: 1
+  - item: *iron_ingot
+    quantity: 2
+  - item: *paper
+    quantity: 3
+  discoveryItems:
+  - *blessing
+  requiredStructure: null
+- id: 19
+  name: paper
+  duration: 300
+  result: !!ItemStack
+    item: *paper
+    quantity: 5
+  recipes:
+  - item: *log
+    quantity: 1
+  discoveryItems:
+  - *log
+  requiredStructure: *forge03
+- id: 20
+  name: fabric
+  duration: 1000
+  result: !!ItemStack
+    item: *fabric
+    quantity: 1
+  recipes:
+  - item: *string
+    quantity: 3
+  discoveryItems:
+  - *string
+  requiredStructure: null
+- id: 21
+  name: metal_ball
+  duration: 1500
+  result: !!ItemStack
+    item: *metal_ball02
+    quantity: 5
+  recipes:
+  - item: *iron_ingot
+    quantity: 1
+  discoveryItems:
+  - *iron_ingot
+  requiredStructure: *crafting_table03
+- id: 22
+  name: paper_cartridge
+  duration: 200
+  result: !!ItemStack
+    item: *paper_cartridge
+    quantity: 1
+  recipes:
+  - item: *paper
+    quantity: 1
+  - item: *gunpowder
+    quantity: 1
+  - item: *metal_ball02
+    quantity: 1
+  discoveryItems:
+  - *metal_ball02
+  - *gunpowder
+  requiredStructure: *crafting_table03
+- id: 23
+  name: iron_musket
+  duration: 0
+  result: !!ItemStack
+    item: *iron_musket03
+    quantity: 1
+  recipes:
+  - item: *iron_ingot
+    quantity: 4
+  - item: *log
+    quantity: 2
+  discoveryItems:
+  - *iron_ingot
+  - *gunpowder
+  requiredStructure: null
+- id: 24
+  name: gunpowder
+  duration: 3000
+  result: !!ItemStack
+    item: *gunpowder
+    quantity: 5
+  recipes:
+  - item: *coal
+    quantity: 1
+  - item: *sulphur
+    quantity: 1
+  discoveryItems:
+  - *sulphur
+  requiredStructure: *crafting_table03
+- id: 25
+  name: iron_katana
+  duration: 7000
+  result: !!ItemStack
+    item: *iron_katana03
+    quantity: 1
+  recipes:
+  - item: *iron_ingot
+    quantity: 5
+  - item: *leather
+    quantity: 1
+  - item: *log
+    quantity: 1
+  discoveryItems:
+  - *iron_ingot
+  requiredStructure: *crafting_table03
+- id: 26
+  name: healing_tome
+  duration: 10000
+  result: !!ItemStack
+    item: *healing_tome02
+    quantity: 1
+  recipes:
+  - item: *grimoire_of_the_lost
+    quantity: 10
+  - item: *fae_dust
+    quantity: 5
+  - item: *apple
+    quantity: 1
+  discoveryItems:
+  - *grimoire_of_the_lost
+  - *fae_dust
+  requiredStructure: *magic_forge03
+- id: 27
+  name: grimoire_of_the_lost
+  duration: 8000
+  result: !!ItemStack
+    item: *grimoire_of_the_lost
+    quantity: 1
+  recipes:
+  - item: *paper
+    quantity: 10
+  - item: *string
+    quantity: 4
+  - item: *leather
+    quantity: 5
+  discoveryItems:
+  - *leather
+  - *paper
+  requiredStructure: *crafting_table03
+- id: 28
+  name: iron_armor
+  duration: 9000
+  result: !!ItemStack
+    item: *iron_armor02
+    quantity: 1
+  recipes:
+  - item: *iron_ingot
+    quantity: 10
+  discoveryItems:
+  - *iron_ingot
+  requiredStructure: *crafting_table03
+- id: 29
+  name: light_iron_armor
+  duration: 4000
+  result: !!ItemStack
+    item: *light_iron_armor02
+    quantity: 1
+  recipes:
+  - item: *leather
+    quantity: 4
+  - item: *fabric
+    quantity: 3
+  - item: *string
+    quantity: 6
+  - item: *iron_ingot
+    quantity: 3
+  discoveryItems:
+  - *leather
+  - *iron_ingot
+  requiredStructure: *crafting_table03
+- id: 30
+  name: fae_wand
+  duration: 4000
+  result: !!ItemStack
+    item: *fae_wand03
+    quantity: 1
+  recipes:
+  - item: *log
+    quantity: 5
+  - item: *fae_dust
+    quantity: 4
+  - item: *leather
+    quantity: 1
+  discoveryItems:
+  - *fae_dust
+  requiredStructure: *crafting_table03
+- id: 31
+  name: iron_sword
+  duration: 6000
+  result: !!ItemStack
+    item: *iron_sword03
+    quantity: 1
+  recipes:
+  - item: *iron_ingot
+    quantity: 8
+  - item: *log
+    quantity: 1
+  - item: *leather
+    quantity: 1
+  discoveryItems:
+  - *iron_ingot
+  requiredStructure: *crafting_table03
+- id: 32
+  name: iron_slingshot
+  duration: 4000
+  result: !!ItemStack
+    item: *iron_slingshot03
+    quantity: 1
+  recipes:
+  - item: *iron_ingot
+    quantity: 3
+  - item: *silk_string
+    quantity: 3
+  - item: *leather
+    quantity: 1
+  discoveryItems:
+  - *iron_ingot
+  - *silk_string
+  requiredStructure: *crafting_table03
+- id: 33
+  name: orange_seeds
+  duration: 700
+  result: !!ItemStack
+    item: *orange_seeds
+    quantity: 3
+  recipes:
+  - item: *orange
+    quantity: 1
+  discoveryItems:
+  - *orange
+  requiredStructure: null
+- id: 34
+  name: orange_plot
+  duration: 10000
+  result: !!ItemStack
+    item: *orange_plot02
+    quantity: 1
+  recipes:
+  - item: *orange_seeds
+    quantity: 2
+  - item: *leaf
+    quantity: 3
+  - item: *log
+    quantity: 4
+  - item: *rock
+    quantity: 4
+  discoveryItems:
+  - *orange
+  requiredStructure: null
+- id: 35
+  name: infested_plot
+  duration: 2000
+  result: !!ItemStack
+    item: *infested_plot02
+    quantity: 1
+  recipes:
+  - item: *orange_plot02
+    quantity: 1
+  - item: *silk_worm
+    quantity: 2
+  discoveryItems:
+  - *silk_worm
+  - *orange_plot02
+  requiredStructure: null
+itemRewards:
+- &Tree102
+  id: 0
+  name: Tree1
+  entries:
+  - itemStack: !!ItemStack
+      item: *log
+      quantity: 2
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *log
+      quantity: 1
+    probability: 0.5
+  - itemStack: !!ItemStack
+      item: *leaf
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *leaf
+      quantity: 1
+    probability: 0.5
+  - itemStack: !!ItemStack
+      item: *apple
+      quantity: 1
+    probability: 0.25
+- &Tall_Grass02
+  id: 1
+  name: Tall_Grass
+  entries:
+  - itemStack: !!ItemStack
+      item: *grass_tuft
+      quantity: 2
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *grass_tuft
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *wheat_seeds
+      quantity: 1
+    probability: 0.5
+  - itemStack: !!ItemStack
+      item: *wheat_seeds
+      quantity: 1
+    probability: 0.25
+- &small_stones02
+  id: 2
+  name: small_stones
+  entries:
+  - itemStack: !!ItemStack
+      item: *rock
+      quantity: 1
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *rock
+      quantity: 1
+    probability: 0.25
+  - itemStack: !!ItemStack
+      item: *pebble02
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *pebble02
+      quantity: 1
+    probability: 0.5
+- &rock03
+  id: 3
+  name: rock
+  entries:
+  - itemStack: !!ItemStack
+      item: *rock
+      quantity: 1
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *rock
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *rock
+      quantity: 1
+    probability: 0.25
+  - itemStack: !!ItemStack
+      item: *iron_ore
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *iron_ore
+      quantity: 1
+    probability: 0.25
+  - itemStack: !!ItemStack
+      item: *coal
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *coal
+      quantity: 1
+    probability: 0.5
+  - itemStack: !!ItemStack
+      item: *sulphur
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *sulphur
+      quantity: 1
+    probability: 0.5
+- &bento03
+  id: 4
+  name: bento
+  entries:
+  - itemStack: !!ItemStack
+      item: *uncooked_meat
+      quantity: 1
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *leather
+      quantity: 1
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *leather
+      quantity: 1
+    probability: 0.5
+  - itemStack: !!ItemStack
+      item: *uncooked_meat
+      quantity: 1
+    probability: 0.5
+  - itemStack: !!ItemStack
+      item: *uncooked_meat
+      quantity: 1
+    probability: 0.125
+- &low_fae03
+  id: 5
+  name: low_fae
+  entries:
+  - itemStack: !!ItemStack
+      item: *fae_dust
+      quantity: 1
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *fae_dust
+      quantity: 1
+    probability: 0.5
+  - itemStack: !!ItemStack
+      item: *apple
+      quantity: 1
+    probability: 0.125
+- *wheat_farm02
+- *haha
+- &etherium_tree
+  id: 8
+  name: etherium_tree
+  entries:
+  - itemStack: !!ItemStack
+      item: *etherium_log
+      quantity: 1
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *etherium_log
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *etherium_log
+      quantity: 1
+    probability: 0.25
+  - itemStack: !!ItemStack
+      item: *leaf
+      quantity: 2
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *leaf
+      quantity: 1
+    probability: 0.75
+- &orange_shrub02
+  id: 9
+  name: orange_shrub
+  entries:
+  - itemStack: !!ItemStack
+      item: *orange
+      quantity: 1
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *orange
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *orange
+      quantity: 1
+    probability: 0.25
+  - itemStack: !!ItemStack
+      item: *leaf
+      quantity: 1
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *leaf
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *silk_worm
+      quantity: 1
+    probability: 0.12
+- &crystal02
+  id: 10
+  name: crystal
+  entries:
+  - itemStack: !!ItemStack
+      item: *etherium_crystal
+      quantity: 2
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *etherium_crystal
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *etherium_crystal
+      quantity: 1
+    probability: 0.25
+- &gilded_stone02
+  id: 11
+  name: gilded_stone
+  entries:
+  - itemStack: !!ItemStack
+      item: *gold_nugget
+      quantity: 1
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *gold_nugget
+      quantity: 1
+    probability: 0.5
+  - itemStack: !!ItemStack
+      item: *gold_nugget
+      quantity: 1
+    probability: 0.25
+  - itemStack: !!ItemStack
+      item: *rock
+      quantity: 1
+    probability: 1.0
+  - itemStack: !!ItemStack
+      item: *rock
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *rock
+      quantity: 1
+    probability: 0.5
+  - itemStack: !!ItemStack
+      item: *rock
+      quantity: 1
+    probability: 0.25
+- *orange_plot03
+- *infested_plot03
+behaviorSets:
+- &bento02
+  id: 0
+  name: bento
+  behaviors:
+  - &wander !!WanderBehavior
+    id: 0
+    name: wander
+    changeConditions:
+    - !!TookDamageCondition
+      id: 0
+      nextBehavior: &flee !!GetAwayBehavior
+        id: 1
+        name: flee
+        changeConditions:
+        - !!DistanceCondition
+          id: 0
+          nextBehavior: *wander
+          affectedNeighborsDistance: 5.0
+          targetType: CLOSEST_ENNEMY
+          operator: GREATER_THAN
+          targetDistance: 30.0
+        abilityToUseId: 0
+        targetType: CLOSEST_ENNEMY
+      affectedNeighborsDistance: 5.0
+    - !!DistanceCondition
+      id: 0
+      nextBehavior: *flee
+      affectedNeighborsDistance: 5.0
+      targetType: CLOSEST_ENNEMY
+      operator: LESS_THAN
+      targetDistance: 10.0
+    abilityToUseId: 0
+    anchorType: NONE
+    moveRate: 0.3
+    forwardFactor: 0.5
+  - *flee
+- &low_fae02
+  id: 1
+  name: low_fae
+  behaviors:
+  - !!WanderBehavior
+    id: 0
+    name: spawn
+    changeConditions:
+    - !!TimeCondition
+      id: 0
+      nextBehavior: &wander02 !!WanderBehavior
+        id: 1
+        name: wander
+        changeConditions:
+        - !!DistanceCondition
+          id: 0
+          nextBehavior: &attack !!MoveTowardBehavior
+            id: 2
+            name: attack
+            changeConditions:
+            - !!DistanceCondition
+              id: 0
+              nextBehavior: &flee02 !!GetAwayBehavior
+                id: 3
+                name: flee
+                changeConditions:
+                - !!DistanceCondition
+                  id: 0
+                  nextBehavior: *attack
+                  affectedNeighborsDistance: 0.0
+                  targetType: CLOSEST_ENNEMY
+                  operator: GREATER_THAN
+                  targetDistance: 3.0
+                abilityToUseId: 1
+                targetType: CLOSEST_ENNEMY
+              affectedNeighborsDistance: 0.0
+              targetType: CLOSEST_ENNEMY
+              operator: LESS_THAN
+              targetDistance: 2.0
+            - !!DistanceCondition
+              id: 0
+              nextBehavior: *wander02
+              affectedNeighborsDistance: 0.0
+              targetType: CLOSEST_ENNEMY
+              operator: GREATER_THAN
+              targetDistance: 20.0
+            abilityToUseId: 1
+            targetType: CLOSEST_ENNEMY
+            minDistance: 5.0
+            randomAngle: 0.0
+          affectedNeighborsDistance: 5.0
+          targetType: CLOSEST_ENNEMY
+          operator: LESS_THAN
+          targetDistance: 15.0
+        - !!TookDamageCondition
+          id: 0
+          nextBehavior: *attack
+          affectedNeighborsDistance: 0.0
+        abilityToUseId: 0
+        anchorType: NONE
+        moveRate: 0.3
+        forwardFactor: 0.5
+      affectedNeighborsDistance: 0.0
+      targetTime: 5000
+    abilityToUseId: 0
+    anchorType: NONE
+    moveRate: 0.3
+    forwardFactor: 0.5
+  - *wander02
+  - *attack
+  - *flee02
+- *haha02
+abilitySets:
+- &low_fae04
+  id: 0
+  name: low_fae
+  abilities:
+  - !!CreatureAlterationAbility
+    id: 0
+    cooldown: 700
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.0
+          effect: *fae_bullet02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.17453292
+          randomAngle: 0.0
+          effect: *fae_bullet02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: -0.17453292
+          randomAngle: 0.0
+          effect: *fae_bullet02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.34906584
+          randomAngle: 0.0
+          effect: *fae_bullet02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: -0.34906584
+          randomAngle: 0.0
+          effect: *fae_bullet02
+    predictionBulletSpeed: 18.0
+creatures:
+- &bento04
+  id: 0
+  name: bento
+  spriteSheet: *bento
+  collisionRadius: 0.0
+  strength: -2.0
+  agility: 4.0
+  intelligence: 0.0
+  solid: true
+  behaviorSet: *bento02
+  itemReward: *bento03
+  abilitySet: null
+  lifetime: 0
+  inventorySize: 0
+- &low_fae05
+  id: 1
+  name: low_fae
+  spriteSheet: *low_fae
+  collisionRadius: 0.0
+  strength: -4.0
+  agility: 1.0
+  intelligence: 3.0
+  solid: true
+  behaviorSet: *low_fae02
+  itemReward: *low_fae03
+  abilitySet: *low_fae04
+  lifetime: 0
+  inventorySize: 0
+- *haha03
+tiles:
+- &grass
+  id: 0
+  name: grass
+  solid: false
+  velocityFactor: 1.0
+  frames:
+  - {x: 0, y: 0}
+  image: Images/tiles.png
+- *water
+- *sand
+- *deep_water
+- &mountain_grass
+  id: 4
+  name: mountain_grass
+  solid: false
+  velocityFactor: 1.0
+  frames:
+  - {x: 6, y: 0}
+  image: Images/tiles.png
+- *mountain
+- &rock04
+  id: 6
+  name: rock
+  solid: true
+  velocityFactor: 1.0
+  frames:
+  - {x: 6, y: 1}
+  image: Images/tiles.png
+- &path
+  id: 7
+  name: path
+  solid: false
+  velocityFactor: 1.2
+  frames:
+  - {x: 0, y: 1}
+  image: Images/tiles.png
+- &etherium
+  id: 8
+  name: etherium
+  solid: false
+  velocityFactor: 1.0
+  frames:
+  - {x: 0, y: 2}
+  image: Images/tiles.png
+- *etherium_mountain
+- &etherium_rock
+  id: 10
+  name: etherium_rock
+  solid: true
+  velocityFactor: 1.0
+  frames:
+  - {x: 2, y: 2}
+  image: Images/tiles.png
+- *crystal_sand
+structures:
+- &Tree !!HarvestableStructure
+  id: 0
+  name: Tree
+  solid: true
+  spriteSheet: *Tree1
+  randomHorizontalFlip: true
+  avoidStuck: false
+  dimensions: {width: 1, height: 1}
+  duration: 0
+  bannedTiles:
+  - *water
+  - *sand
+  - *path
+  - *mountain
+  lightEmissionRadius: 0.0
+  deconstructionDuration: 0
+  maxHealth: 0.0
+  harvestingTime: 2500
+  itemReward: *Tree102
+  regrowthTime: {min: 420000, max: 540000}
+- &Tall_Grass03 !!HarvestableStructure
+  id: 1
+  name: Tall_Grass
+  solid: true
+  spriteSheet: *Tall_Grass
+  randomHorizontalFlip: true
+  avoidStuck: false
+  dimensions: {width: 1, height: 1}
+  duration: 0
+  bannedTiles:
+  - *water
+  - *sand
+  - *path
+  - *mountain
+  lightEmissionRadius: 0.0
+  deconstructionDuration: 0
+  maxHealth: 0.0
+  harvestingTime: 2000
+  itemReward: *Tall_Grass02
+  regrowthTime: {min: 420000, max: 540000}
+- *campfire03
+- *culinary_table02
+- &small_stones03 !!HarvestableStructure
+  id: 4
+  name: small_stones
+  solid: false
+  spriteSheet: *small_stones
+  randomHorizontalFlip: false
+  avoidStuck: false
+  dimensions: {width: 1, height: 1}
+  duration: 0
+  bannedTiles: []
+  lightEmissionRadius: 0.0
+  deconstructionDuration: 0
+  maxHealth: 0.0
+  harvestingTime: 800
+  itemReward: *small_stones02
+  regrowthTime: {min: 1020000, max: 1140000}
+- &rock05 !!HarvestableStructure
+  id: 5
+  name: rock
+  solid: true
+  spriteSheet: *rock02
+  randomHorizontalFlip: false
+  avoidStuck: false
+  dimensions: {width: 1, height: 1}
+  duration: 0
+  bannedTiles: []
+  lightEmissionRadius: 0.0
+  deconstructionDuration: 0
+  maxHealth: 0.0
+  harvestingTime: 4300
+  itemReward: *rock03
+  regrowthTime: {min: 1020000, max: 1140000}
+- *forge03
+- *crafting_table03
+- *reinforced_wall03
+- *chest03
+- *magic_forge03
+- *wheat_farm03
+- &shinto_shrine02 !!FactoryStructure
+  id: 12
+  name: shinto_shrine
+  solid: true
+  spriteSheet: *shinto_shrine
+  randomHorizontalFlip: true
+  avoidStuck: false
+  dimensions: {width: 1, height: 1}
+  duration: 0
+  bannedTiles: []
+  lightEmissionRadius: 0.0
+  deconstructionDuration: 0
+  maxHealth: 0.0
+  workingSpriteSheet: null
+  recipeSize: 1
+  fuelSize: 1
+  resultSize: 1
+  fuels: []
+  crafts:
+  - recipes:
+    - item: *gold_nugget
+      quantity: 1
+    results:
+    - item: *blessing
+      quantity: 1
+    duration: 0
+    fuelConsumption: 0.0
+  itemHandlingOnDeath: DROP
+- &tree_202 !!HarvestableStructure
+  id: 13
+  name: tree 2
+  solid: true
+  spriteSheet: *tree_2
+  randomHorizontalFlip: true
+  avoidStuck: false
+  dimensions: {width: 1, height: 1}
+  duration: 0
+  bannedTiles:
+  - *water
+  - *crystal_sand
+  - *path
+  - *etherium_mountain
+  lightEmissionRadius: 0.0
+  deconstructionDuration: 0
+  maxHealth: 0.0
+  harvestingTime: 3200
+  itemReward: *etherium_tree
+  regrowthTime: {min: 420000, max: 540000}
+- &orange_shrub03 !!HarvestableStructure
+  id: 14
+  name: orange_shrub
+  solid: true
+  spriteSheet: *orange_shrub
+  randomHorizontalFlip: true
+  avoidStuck: false
+  dimensions: {width: 1, height: 1}
+  duration: 0
+  bannedTiles:
+  - *water
+  - *crystal_sand
+  - *path
+  - *etherium_mountain
+  lightEmissionRadius: 0.0
+  deconstructionDuration: 0
+  maxHealth: 0.0
+  harvestingTime: 2000
+  itemReward: *orange_shrub02
+  regrowthTime: {min: 420000, max: 540000}
+- &crystal03 !!HarvestableStructure
+  id: 15
+  name: crystal
+  solid: true
+  spriteSheet: *crystal
+  randomHorizontalFlip: true
+  avoidStuck: false
+  dimensions: {width: 1, height: 1}
+  duration: 0
+  bannedTiles: []
+  lightEmissionRadius: 0.0
+  deconstructionDuration: 0
+  maxHealth: 0.0
+  harvestingTime: 3800
+  itemReward: *crystal02
+  regrowthTime: {min: 420000, max: 540000}
+- &gilded_stone03 !!HarvestableStructure
+  id: 16
+  name: gilded_stone
+  solid: true
+  spriteSheet: *gilded_stone
+  randomHorizontalFlip: true
+  avoidStuck: false
+  dimensions: {width: 1, height: 1}
+  duration: 0
+  bannedTiles: []
+  lightEmissionRadius: 0.0
+  deconstructionDuration: 0
+  maxHealth: 0.0
+  harvestingTime: 4500
+  itemReward: *gilded_stone02
+  regrowthTime: {min: 420000, max: 540000}
+- *orange_plot04
+- *infested_plot04
+mapProviders:
+- &default !!ProcedurallyGeneratedMapProvider
+  id: 0
+  name: default
+  heightmaps:
+  - &height {id: 0, name: height, numberOfoctaves: 5, persistence: 0.7, scale: 50.0}
+  - &moisture {id: 1, name: moisture, numberOfoctaves: 3, persistence: 0.64, scale: 200.0}
+  - &special {id: 2, name: special, numberOfoctaves: 3, persistence: 0.5, scale: 200.0}
+  - &path02 {id: 3, name: path, numberOfoctaves: 1, persistence: 1.0, scale: 250.0}
+  defaultTile: *deep_water
+  tileGenerators:
+  - heightmapConditions:
+    - heightmap: *path02
+      min: 0.485
+      max: 0.515
+    tileHashmap:
+      heightmap: *path02
+      entries:
+      - tile: *path
+        next: 1.0
+  - heightmapConditions:
+    - heightmap: *special
+      min: 0.65
+      max: 1.0
+    - heightmap: *height
+      min: 0.3
+      max: 1.0
+    tileHashmap:
+      heightmap: *height
+      entries:
+      - tile: *crystal_sand
+        next: 0.35
+      - tile: *etherium
+        next: 0.75
+      - tile: *etherium_mountain
+        next: 0.85
+      - tile: *etherium_rock
+        next: 1.0
+  - heightmapConditions: []
+    tileHashmap:
+      heightmap: *height
+      entries:
+      - tile: *deep_water
+        next: 0.25
+      - tile: *water
+        next: 0.3
+      - tile: *sand
+        next: 0.35
+      - tile: *grass
+        next: 0.65
+      - tile: *mountain_grass
+        next: 0.75
+      - tile: *mountain
+        next: 0.85
+      - tile: *rock04
+        next: 1.0
+  structureGenerators:
+  - structureProducer:
+      backingArray:
+      - probability: 6.0
+        element: *Tree
+      - probability: 2.0
+        element: *Tall_Grass03
+      - probability: 1.0
+        element: *small_stones03
+    heightmapConditions:
+    - heightmap: *height
+      min: 0.36
+      max: 0.75
+    - heightmap: *special
+      min: 0.0
+      max: 0.65
+    density: 0.015
+  - structureProducer:
+      backingArray:
+      - probability: 8.0
+        element: *Tree
+      - probability: 2.0
+        element: *Tall_Grass03
+    heightmapConditions:
+    - heightmap: *height
+      min: 0.36
+      max: 0.75
+    - heightmap: *special
+      min: 0.0
+      max: 0.65
+    density: 0.04
+  - structureProducer:
+      backingArray:
+      - probability: 6.0
+        element: *Tree
+      - probability: 2.0
+        element: *Tall_Grass03
+      - probability: 1.0
+        element: *small_stones03
+    heightmapConditions:
+    - heightmap: *height
+      min: 0.36
+      max: 0.75
+    - heightmap: *special
+      min: 0.0
+      max: 0.65
+    density: 0.015
+  - structureProducer:
+      backingArray:
+      - probability: 1.0
+        element: *Tall_Grass03
+    heightmapConditions:
+    - heightmap: *height
+      min: 0.36
+      max: 0.75
+    - heightmap: *moisture
+      min: 0.8
+      max: 1.0
+    - heightmap: *special
+      min: 0.0
+      max: 0.65
+    density: 0.015
+  - structureProducer:
+      backingArray:
+      - probability: 1.0
+        element: *small_stones03
+    heightmapConditions:
+    - heightmap: *height
+      min: 0.31
+      max: 0.75
+    - heightmap: *special
+      min: 0.0
+      max: 0.65
+    density: 0.003
+  - structureProducer:
+      backingArray:
+      - probability: 1.0
+        element: *rock05
+    heightmapConditions:
+    - heightmap: *height
+      min: 0.76
+      max: 0.84
+    - heightmap: *special
+      min: 0.0
+      max: 0.65
+    density: 0.0034999999
+  - structureProducer:
+      backingArray:
+      - probability: 6.0
+        element: *tree_202
+      - probability: 2.0
+        element: *orange_shrub03
+      - probability: 1.0
+        element: *crystal03
+    heightmapConditions:
+    - heightmap: *height
+      min: 0.36
+      max: 0.75
+    - heightmap: *special
+      min: 0.65
+      max: 1.0
+    density: 0.015
+  - structureProducer:
+      backingArray:
+      - probability: 5.0
+        element: *tree_202
+      - probability: 1.0
+        element: *orange_shrub03
+    heightmapConditions:
+    - heightmap: *height
+      min: 0.36
+      max: 0.75
+    - heightmap: *special
+      min: 0.65
+      max: 1.0
+    density: 0.04
+  - structureProducer:
+      backingArray:
+      - probability: 1.0
+        element: *gilded_stone03
+    heightmapConditions:
+    - heightmap: *height
+      min: 0.75
+      max: 0.85
+    - heightmap: *special
+      min: 0.65
+      max: 1.0
+    density: 0.004
+  - structureProducer:
+      backingArray:
+      - probability: 1.0
+        element: *crystal03
+    heightmapConditions:
+    - heightmap: *height
+      min: 0.3
+      max: 0.85
+    - heightmap: *special
+      min: 0.65
+      max: 1.0
+    density: 0.0034999999
+  - structureProducer:
+      backingArray:
+      - probability: 1.0
+        element: *shinto_shrine02
+    heightmapConditions:
+    - heightmap: *height
+      min: 0.36
+      max: 0.84
+    - heightmap: *special
+      min: 0.51
+      max: 1.0
+    density: 0.0015
+ecosystems:
+- &default02
+  id: 0
+  name: default
+  structureSpawners:
+  - creatureChooser:
+      backingArray:
+      - probability: 2.0
+        element: *bento04
+      - probability: 1.0
+        element: *low_fae05
+    initialSpawn: 3
+    maximumCreatures: 2
+    respawnTime: {min: 240000, max: 300000}
+    structure: *Tree
+    spawnRadius: 10.0
+    managedRadius: 50.0
+  - creatureChooser:
+      backingArray:
+      - probability: 2.0
+        element: *bento04
+      - probability: 1.0
+        element: *low_fae05
+    initialSpawn: 3
+    maximumCreatures: 2
+    respawnTime: {min: 300000, max: 360000}
+    structure: *Tall_Grass03
+    spawnRadius: 10.0
+    managedRadius: 50.0
+  - creatureChooser:
+      backingArray:
+      - probability: 1.0
+        element: *low_fae05
+    initialSpawn: 2
+    maximumCreatures: 1
+    respawnTime: {min: 360000, max: 420000}
+    structure: *small_stones03
+    spawnRadius: 10.0
+    managedRadius: 50.0
+  darknessSpawner:
+    creatureChooser:
+      backingArray: []
+    initialSpawn: 1
+    maximumCreatures: 0
+    respawnTime: {min: 480000, max: 600000}
+- id: 1
+  name: empty
+  structureSpawners: []
+  darknessSpawner:
+    creatureChooser:
+      backingArray: []
+    initialSpawn: 0
+    maximumCreatures: 0
+    respawnTime: {min: 0, max: 0}
+gameModes:
+- id: 0
+  name: Survival
+  teamNumberInterval: {min: 1, max: 1}
+  teamSizeInterval: {min: 1, max: 10}
+  mapProvider: *default
+  ecosystem: *default02
+  dayCycle: !!DayNightCycle {dayDuration: 480000, nightDuration: 120000}
+  roles:
+    selectionMode: RANDOM
+    roles:
+    - id: 0
+      name: Player
+      teammatesVisiblity: ALL
+      enemiesVisiblity: ALL
+      minimumPerTeam: 0
+      maximumPerTeam: 0
+      recommandedRatioPerTeam: 0.0
+      starterKit:
+        weaponItem: null
+        clothingItem: null
+        accessory1Item: null
+        accessory2Item: null
+        inventory:
+        - item: *mana_core
+          quantity: 1
+      winCondition: !!TeamSurvivedWinCondition {}
+  endGameConditions: []
+  events: []
+  mapLimits: null
+  playerSpawn: !!AutoSquarePlayerSpawn {size: 490, minFreeSpace: 0.4, maxFreeSpace: 1.0}
+  playerDeathItemHandling: DROP
+  playerRespawnType: SPAWN_POSITION
+  keepPermanentStats: true
+  playerRespawnDelay: 5000
+  hungerPerMinute: 10.0
+- id: 1
+  name: Hardcore Survival
+  teamNumberInterval: {min: 1, max: 1}
+  teamSizeInterval: {min: 1, max: 10}
+  mapProvider: *default
+  ecosystem: *default02
+  dayCycle: !!DayNightCycle {dayDuration: 480000, nightDuration: 120000}
+  roles:
+    selectionMode: RANDOM
+    roles:
+    - id: 0
+      name: Player
+      teammatesVisiblity: ALL
+      enemiesVisiblity: ALL
+      minimumPerTeam: 0
+      maximumPerTeam: 0
+      recommandedRatioPerTeam: 0.0
+      starterKit:
+        weaponItem: null
+        clothingItem: null
+        accessory1Item: null
+        accessory2Item: null
+        inventory:
+        - item: *mana_core
+          quantity: 1
+      winCondition: !!TeamSurvivedWinCondition {}
+  endGameConditions: []
+  events: []
+  mapLimits: null
+  playerSpawn: !!AutoSquarePlayerSpawn {size: 490, minFreeSpace: 0.4, maxFreeSpace: 1.0}
+  playerDeathItemHandling: DROP
+  playerRespawnType: NONE
+  keepPermanentStats: false
+  playerRespawnDelay: 5000
+  hungerPerMinute: 10.0
+- id: 2
+  name: Team Fight
+  teamNumberInterval: {min: 2, max: 2}
+  teamSizeInterval: {min: 1, max: 10}
+  mapProvider: *default
+  ecosystem: *default02
+  dayCycle: !!DayNightCycle {dayDuration: 480000, nightDuration: 120000}
+  roles:
+    selectionMode: LOBBY
+    roles: []
+  endGameConditions:
+  - !!RemainingTeamEndCondition {remainingTeamCondition: 1}
+  events: []
+  mapLimits:
+    shrinkRandomly: false
+    initialSize: 500.0
+    initialDamagePerSecond: 10.0
+    anchors:
+    - {time: 15000, size: 400.0, damagePerSecond: 10.0}
+    - {time: 25000, size: 300.0, damagePerSecond: 10.0}
+    - {time: 35000, size: 100.0, damagePerSecond: 10.0}
+  playerSpawn: !!AutoSquarePlayerSpawn {size: 490, minFreeSpace: 0.4, maxFreeSpace: 1.0}
+  playerDeathItemHandling: DROP
+  playerRespawnType: NONE
+  keepPermanentStats: false
+  playerRespawnDelay: 5000
+  hungerPerMinute: 10.0
+- id: 3
+  name: Singles
+  teamNumberInterval: {min: 2, max: 20}
+  teamSizeInterval: {min: 1, max: 1}
+  mapProvider: *default
+  ecosystem: *default02
+  dayCycle: !!DayNightCycle {dayDuration: 480000, nightDuration: 120000}
+  roles: null
+  endGameConditions:
+  - !!RemainingTeamEndCondition {remainingTeamCondition: 1}
+  events: []
+  mapLimits:
+    shrinkRandomly: false
+    initialSize: 1000.0
+    initialDamagePerSecond: 10.0
+    anchors:
+    - {time: 10000, size: 800.0, damagePerSecond: 10.0}
+    - {time: 20000, size: 600.0, damagePerSecond: 10.0}
+    - {time: 25000, size: 400.0, damagePerSecond: 10.0}
+    - {time: 30000, size: 200.0, damagePerSecond: 10.0}
+    - {time: 35000, size: 100.0, damagePerSecond: 10.0}
+  playerSpawn: !!AutoSquarePlayerSpawn {size: 490, minFreeSpace: 0.4, maxFreeSpace: 1.0}
+  playerDeathItemHandling: DROP
+  playerRespawnType: NONE
+  keepPermanentStats: false
+  playerRespawnDelay: 5000
+  hungerPerMinute: 10.0
+- id: 4
+  name: Duos
+  teamNumberInterval: {min: 2, max: 20}
+  teamSizeInterval: {min: 2, max: 2}
+  mapProvider: *default
+  ecosystem: *default02
+  dayCycle: !!DayNightCycle {dayDuration: 480000, nightDuration: 120000}
+  roles: null
+  endGameConditions:
+  - !!RemainingTeamEndCondition {remainingTeamCondition: 1}
+  events: []
+  mapLimits:
+    shrinkRandomly: false
+    initialSize: 1000.0
+    initialDamagePerSecond: 10.0
+    anchors:
+    - {time: 10000, size: 800.0, damagePerSecond: 10.0}
+    - {time: 20000, size: 600.0, damagePerSecond: 10.0}
+    - {time: 25000, size: 400.0, damagePerSecond: 10.0}
+    - {time: 30000, size: 200.0, damagePerSecond: 10.0}
+    - {time: 35000, size: 100.0, damagePerSecond: 10.0}
+  playerSpawn: !!AutoSquarePlayerSpawn {size: 490, minFreeSpace: 0.4, maxFreeSpace: 1.0}
+  playerDeathItemHandling: DROP
+  playerRespawnType: NONE
+  keepPermanentStats: false
+  playerRespawnDelay: 5000
+  hungerPerMinute: 10.0
+- id: 5
+  name: Squads
+  teamNumberInterval: {min: 2, max: 20}
+  teamSizeInterval: {min: 3, max: 4}
+  mapProvider: *default
+  ecosystem: *default02
+  dayCycle: !!DayNightCycle {dayDuration: 480000, nightDuration: 120000}
+  roles: null
+  endGameConditions:
+  - !!RemainingTeamEndCondition {remainingTeamCondition: 1}
+  events: []
+  mapLimits:
+    shrinkRandomly: false
+    initialSize: 1000.0
+    initialDamagePerSecond: 10.0
+    anchors:
+    - {time: 10000, size: 500.0, damagePerSecond: 10.0}
+    - {time: 20000, size: 500.0, damagePerSecond: 10.0}
+    - {time: 25000, size: 500.0, damagePerSecond: 10.0}
+    - {time: 30000, size: 500.0, damagePerSecond: 10.0}
+    - {time: 35000, size: 500.0, damagePerSecond: 10.0}
+  playerSpawn: !!AutoSquarePlayerSpawn {size: 490, minFreeSpace: 0.4, maxFreeSpace: 1.0}
+  playerDeathItemHandling: DROP
+  playerRespawnType: NONE
+  keepPermanentStats: false
+  playerRespawnDelay: 5000
+  hungerPerMinute: 10.0
+constants:
+  defaultCharacter: *character03
+  outsideTile: *deep_water
+  tileAnimationSpeed: 300
+releaseVersion: ALPHA_12C

@@ -1,0 +1,664 @@
+!!folder
+name: root
+children:
+- !!folder
+  name: Character
+  children:
+  - !!folder
+    name: Armor Sprites
+    children:
+    - !!element {type: SPRITE_SHEET, id: 20}
+    - !!element {type: SPRITE_SHEET, id: 43}
+    - !!element {type: SPRITE_SHEET, id: 44}
+  - !!element {type: SPRITE_SHEET, id: 0}
+  - !!element {type: ANIMATION_TEMPLATE, id: 0}
+  - !!element {type: EQUIPMENT_OFFSET, id: 0}
+  - !!element {type: ANIMATION_TEMPLATE, id: 2}
+  - !!folder
+    name: Mana System
+    children:
+    - !!element {type: ITEM, id: 42}
+    - !!element {type: ITEM, id: 43}
+    - !!element {type: EFFECT, id: 9}
+    - !!element {type: CREATURE, id: 2}
+    - !!element {type: BEHAVIOR_SET, id: 2}
+    - !!element {type: ITEM_REWARD, id: 7}
+- !!folder
+  name: World
+  children:
+  - !!folder
+    name: Tiles
+    children:
+    - !!element {type: TILE, id: 0}
+    - !!element {type: TILE, id: 1}
+    - !!element {type: TILE, id: 2}
+    - !!element {type: TILE, id: 3}
+    - !!element {type: TILE, id: 4}
+    - !!element {type: TILE, id: 5}
+    - !!element {type: TILE, id: 6}
+    - !!element {type: TILE, id: 7}
+    - !!element {type: TILE, id: 8}
+    - !!element {type: TILE, id: 9}
+    - !!element {type: TILE, id: 10}
+    - !!element {type: TILE, id: 11}
+  - !!folder
+    name: Map
+    children:
+    - !!element {type: ECOSYSTEM, id: 0}
+    - !!element {type: MAP_PROVIDER, id: 0}
+    - !!element {type: ECOSYSTEM, id: 1}
+  - !!folder
+    name: Structures
+    children:
+    - !!folder
+      name: Player Stations
+      children:
+      - !!folder
+        name: Fabrication Station
+        children: []
+      - !!folder
+        name: Alchemy Station
+        children: []
+      - !!folder
+        name: Forge
+        children:
+        - !!element {type: SPRITE_SHEET, id: 16}
+        - !!element {type: SPRITE_SHEET, id: 17}
+        - !!element {type: STRUCTURE, id: 6}
+      - !!folder
+        name: Crafting Table
+        children:
+        - !!element {type: SPRITE_SHEET, id: 15}
+        - !!element {type: STRUCTURE, id: 7}
+      - !!folder
+        name: Culinary Table
+        children:
+        - !!element {type: STRUCTURE, id: 3}
+        - !!element {type: SPRITE_SHEET, id: 8}
+      - !!folder
+        name: Campfire
+        children:
+        - !!element {type: STRUCTURE, id: 2}
+        - !!element {type: SPRITE_SHEET, id: 7}
+      - !!folder
+        name: Oven
+        children: []
+      - !!folder
+        name: Magic Forge
+        children:
+        - !!element {type: SPRITE_SHEET, id: 26}
+        - !!element {type: STRUCTURE, id: 10}
+    - !!folder
+      name: Player Buildings
+      children:
+      - !!folder
+        name: Torch
+        children: []
+      - !!folder
+        name: Chest
+        children:
+        - !!element {type: SPRITE_SHEET, id: 18}
+        - !!element {type: STRUCTURE, id: 9}
+        - !!element {type: SPRITE_SHEET, id: 25}
+      - !!folder
+        name: Wall
+        children:
+        - !!element {type: SPRITE_SHEET, id: 19}
+        - !!element {type: STRUCTURE, id: 8}
+    - !!folder
+      name: Spawners
+      children: []
+    - !!folder
+      name: Nature
+      children:
+      - !!folder
+        name: Grass
+        children:
+        - !!element {type: SPRITE_SHEET, id: 2}
+        - !!element {type: STRUCTURE, id: 1}
+        - !!element {type: ITEM_REWARD, id: 1}
+      - !!folder
+        name: Rock
+        children:
+        - !!element {type: SPRITE_SHEET, id: 12}
+        - !!element {type: ITEM_REWARD, id: 3}
+        - !!element {type: STRUCTURE, id: 5}
+      - !!folder
+        name: Small Stones
+        children:
+        - !!element {type: SPRITE_SHEET, id: 13}
+        - !!element {type: ITEM_REWARD, id: 2}
+        - !!element {type: STRUCTURE, id: 4}
+      - !!folder
+        name: Tree1
+        children:
+        - !!element {type: STRUCTURE, id: 0}
+        - !!element {type: ITEM_REWARD, id: 0}
+        - !!element {type: SPRITE_SHEET, id: 1}
+      - !!folder
+        name: Tree 2
+        children:
+        - !!element {type: STRUCTURE, id: 13}
+        - !!element {type: SPRITE_SHEET, id: 33}
+        - !!element {type: ITEM_REWARD, id: 8}
+      - !!folder
+        name: Orange Shrub
+        children:
+        - !!element {type: SPRITE_SHEET, id: 34}
+        - !!element {type: STRUCTURE, id: 14}
+        - !!element {type: ITEM_REWARD, id: 9}
+      - !!folder
+        name: crystal
+        children:
+        - !!element {type: SPRITE_SHEET, id: 35}
+        - !!element {type: ITEM_REWARD, id: 10}
+        - !!element {type: STRUCTURE, id: 15}
+      - !!folder
+        name: gilded_stone
+        children:
+        - !!element {type: ITEM_REWARD, id: 11}
+        - !!element {type: SPRITE_SHEET, id: 36}
+        - !!element {type: STRUCTURE, id: 16}
+    - !!folder
+      name: Natural Buildings
+      children:
+      - !!folder
+        name: shinto_shrine
+        children:
+        - !!element {type: SPRITE_SHEET, id: 31}
+        - !!element {type: STRUCTURE, id: 12}
+    - !!folder
+      name: Farms
+      children:
+      - !!folder
+        name: wheat_farm
+        children:
+        - !!element {type: SPRITE_SHEET, id: 32}
+        - !!element {type: STRUCTURE, id: 11}
+        - !!element {type: ITEM_REWARD, id: 6}
+      - !!folder
+        name: orange_plot
+        children:
+        - !!element {type: SPRITE_SHEET, id: 49}
+        - !!element {type: ITEM_REWARD, id: 12}
+        - !!element {type: STRUCTURE, id: 17}
+      - !!folder
+        name: infested_plot
+        children:
+        - !!element {type: SPRITE_SHEET, id: 50}
+        - !!element {type: ITEM_REWARD, id: 13}
+        - !!element {type: STRUCTURE, id: 18}
+- !!folder
+  name: Gamemodes
+  children:
+  - !!element {type: GAME_MODE, id: 0}
+  - !!element {type: GAME_MODE, id: 1}
+  - !!element {type: GAME_MODE, id: 2}
+  - !!element {type: GAME_MODE, id: 3}
+  - !!element {type: GAME_MODE, id: 4}
+  - !!element {type: GAME_MODE, id: 5}
+- !!folder
+  name: Creatures
+  children:
+  - !!folder
+    name: Hostile
+    children:
+    - !!folder
+      name: Low Fae
+      children:
+      - !!element {type: SPRITE_SHEET, id: 21}
+      - !!element {type: BEHAVIOR_SET, id: 1}
+      - !!element {type: ABILITY_SET, id: 0}
+      - !!element {type: ITEM_REWARD, id: 5}
+      - !!element {type: CREATURE, id: 1}
+  - !!folder
+    name: Passive
+    children:
+    - !!folder
+      name: Bento
+      children:
+      - !!element {type: SPRITE_SHEET, id: 22}
+      - !!element {type: BEHAVIOR_SET, id: 0}
+      - !!element {type: ITEM_REWARD, id: 4}
+      - !!element {type: CREATURE, id: 0}
+- !!folder
+  name: Generic
+  children:
+  - !!element {type: ANIMATION_TEMPLATE, id: 1}
+  - !!element {type: ANIMATION_TEMPLATE, id: 3}
+  - !!element {type: ANIMATION_TEMPLATE, id: 4}
+  - !!element {type: EQUIPMENT_OFFSET, id: 2}
+  - !!element {type: ANIMATION_TEMPLATE, id: 5}
+  - !!element {type: ANIMATION_TEMPLATE, id: 6}
+  - !!element {type: SPRITE_SHEET, id: 29}
+  - !!element {type: ANIMATION_TEMPLATE, id: 7}
+  - !!folder
+    name: healing_circle
+    children:
+    - !!element {type: SPRITE_SHEET, id: 45}
+    - !!element {type: ANIMATION_TEMPLATE, id: 8}
+- !!folder
+  name: Items
+  children:
+  - !!folder
+    name: Resources
+    children:
+    - !!element {type: ITEM, id: 0}
+    - !!element {type: ITEM, id: 1}
+    - !!element {type: ITEM, id: 2}
+    - !!element {type: ITEM, id: 3}
+    - !!element {type: ITEM_CRAFT, id: 0}
+    - !!element {type: ITEM, id: 4}
+    - !!element {type: ITEM, id: 8}
+    - !!element {type: ITEM_CRAFT, id: 4}
+    - !!element {type: ITEM, id: 14}
+    - !!element {type: ITEM, id: 18}
+    - !!element {type: ITEM, id: 19}
+    - !!element {type: ITEM_CRAFT, id: 20}
+    - !!element {type: ITEM, id: 20}
+    - !!element {type: ITEM, id: 21}
+    - !!element {type: ITEM, id: 22}
+    - !!element {type: ITEM, id: 23}
+    - !!element {type: ITEM, id: 24}
+    - !!element {type: ITEM, id: 25}
+    - !!element {type: ITEM, id: 34}
+    - !!element {type: ITEM, id: 35}
+    - !!element {type: ITEM, id: 36}
+    - !!element {type: ITEM, id: 38}
+    - !!element {type: ITEM, id: 40}
+    - !!element {type: ITEM_CRAFT, id: 19}
+    - !!element {type: ITEM, id: 44}
+    - !!element {type: ITEM, id: 45}
+    - !!element {type: ITEM_CRAFT, id: 24}
+    - !!element {type: ITEM, id: 46}
+    - !!element {type: ITEM, id: 47}
+    - !!element {type: ITEM, id: 48}
+    - !!element {type: ITEM_CRAFT, id: 33}
+    - !!element {type: ITEM, id: 51}
+    - !!element {type: ITEM, id: 52}
+    - !!element {type: ITEM, id: 53}
+    - !!element {type: ITEM, id: 64}
+  - !!folder
+    name: Weapons
+    children:
+    - !!folder
+      name: Melee Staffs
+      children:
+      - !!folder
+        name: wood_staff
+        children:
+        - !!element {type: ITEM, id: 6}
+        - !!element {type: SPRITE_SHEET, id: 3}
+        - !!element {type: EQUIPMENT_OFFSET, id: 1}
+        - !!element {type: ITEM_CRAFT, id: 2}
+    - !!folder
+      name: Bows
+      children:
+      - !!folder
+        name: wood_bow
+        children:
+        - !!element {type: ITEM, id: 7}
+        - !!element {type: SPRITE_SHEET, id: 6}
+        - !!element {type: ITEM_CRAFT, id: 3}
+      - !!folder
+        name: reinforced_bow
+        children:
+        - !!element {type: ITEM, id: 17}
+        - !!element {type: SPRITE_SHEET, id: 11}
+        - !!element {type: ITEM_CRAFT, id: 11}
+    - !!folder
+      name: Corpse Parts
+      children:
+      - !!folder
+        name: Saint's Heart
+        children: []
+      - !!folder
+        name: Saint's Left Arm
+        children: []
+    - !!folder
+      name: Throwables
+      children:
+      - !!folder
+        name: Steel Ball
+        children: []
+    - !!folder
+      name: Katanas
+      children:
+      - !!folder
+        name: kendo_stick
+        children:
+        - !!element {type: ITEM, id: 16}
+        - !!element {type: EQUIPMENT_OFFSET, id: 3}
+        - !!element {type: SPRITE_SHEET, id: 9}
+        - !!element {type: ITEM_CRAFT, id: 12}
+      - !!folder
+        name: iron_katana
+        children:
+        - !!element {type: ITEM, id: 56}
+        - !!element {type: EQUIPMENT_OFFSET, id: 7}
+        - !!element {type: SPRITE_SHEET, id: 39}
+        - !!element {type: ITEM_CRAFT, id: 25}
+    - !!folder
+      name: Slingshots
+      children:
+      - !!folder
+        name: wood_slingshot
+        children:
+        - !!element {type: ITEM, id: 31}
+        - !!element {type: EQUIPMENT_OFFSET, id: 4}
+        - !!element {type: SPRITE_SHEET, id: 24}
+        - !!element {type: ITEM_CRAFT, id: 14}
+      - !!folder
+        name: iron_slingshot
+        children:
+        - !!element {type: ITEM, id: 63}
+        - !!element {type: SPRITE_SHEET, id: 48}
+        - !!element {type: ITEM_CRAFT, id: 32}
+      - !!folder
+        name: enchanted_slignshot
+        children: []
+    - !!folder
+      name: Miko Attire
+      children:
+      - !!folder
+        name: youkai_extermination_kit
+        children:
+        - !!element {type: ITEM, id: 33}
+        - !!element {type: SPRITE_SHEET, id: 30}
+        - !!element {type: EQUIPMENT_OFFSET, id: 5}
+        - !!element {type: ITEM_CRAFT, id: 18}
+      - !!folder
+        name: sealing_katana
+        children: []
+    - !!folder
+      name: Guns
+      children:
+      - !!folder
+        name: iron_musket
+        children:
+        - !!element {type: ITEM, id: 55}
+        - !!element {type: SPRITE_SHEET, id: 37}
+        - !!element {type: EQUIPMENT_OFFSET, id: 6}
+        - !!element {type: ITEM_CRAFT, id: 23}
+    - !!folder
+      name: Swords
+      children:
+      - !!folder
+        name: iron_sword
+        children:
+        - !!element {type: ITEM, id: 57}
+        - !!element {type: EQUIPMENT_OFFSET, id: 8}
+        - !!element {type: SPRITE_SHEET, id: 41}
+        - !!element {type: ITEM_CRAFT, id: 31}
+    - !!folder
+      name: Wands
+      children:
+      - !!folder
+        name: fae_wand
+        children:
+        - !!element {type: ITEM, id: 62}
+        - !!element {type: SPRITE_SHEET, id: 46}
+        - !!element {type: EQUIPMENT_OFFSET, id: 9}
+        - !!element {type: ITEM_CRAFT, id: 30}
+  - !!folder
+    name: Armor
+    children:
+    - !!folder
+      name: Miko Attire
+      children: []
+    - !!folder
+      name: Light Armor
+      children:
+      - !!folder
+        name: leather_armor
+        children:
+        - !!element {type: ITEM_CRAFT, id: 13}
+        - !!element {type: ITEM, id: 32}
+      - !!folder
+        name: light_iron_armor
+        children:
+        - !!element {type: ITEM, id: 60}
+        - !!element {type: ITEM_CRAFT, id: 29}
+    - !!folder
+      name: heavy armor
+      children:
+      - !!folder
+        name: iron_armor
+        children:
+        - !!element {type: ITEM, id: 61}
+        - !!element {type: ITEM_CRAFT, id: 28}
+  - !!folder
+    name: Accessories
+    children:
+    - !!folder
+      name: Corpse Parts
+      children:
+      - !!folder
+        name: Saint's Blood
+        children: []
+    - !!folder
+      name: Secondaries
+      children: []
+    - !!element {type: ITEM, id: 41}
+    - !!folder
+      name: Tomes
+      children:
+      - !!folder
+        name: healing_tome
+        children:
+        - !!element {type: ITEM, id: 58}
+        - !!element {type: ITEM_CRAFT, id: 26}
+    - !!folder
+      name: Spell Books
+      children:
+      - !!folder
+        name: fire_blast
+        children: []
+    - !!folder
+      name: Spell Cards
+      children: []
+    - !!folder
+      name: Shields
+      children: []
+    - !!folder
+      name: Books
+      children:
+      - !!folder
+        name: grimoire_of_the_lost
+        children:
+        - !!element {type: ITEM, id: 59}
+        - !!element {type: ITEM_CRAFT, id: 27}
+  - !!folder
+    name: Consumables
+    children:
+    - !!folder
+      name: Food
+      children:
+      - !!element {type: ITEM, id: 9}
+      - !!element {type: ITEM, id: 10}
+      - !!element {type: ITEM, id: 11}
+      - !!element {type: ITEM, id: 15}
+      - !!element {type: ITEM, id: 49}
+  - !!folder
+    name: Ammo
+    children:
+    - !!folder
+      name: crude_arrow
+      children:
+      - !!element {type: ITEM, id: 5}
+      - !!element {type: ITEM_CRAFT, id: 1}
+      - !!element {type: SPRITE_SHEET, id: 5}
+    - !!folder
+      name: pebble
+      children:
+      - !!element {type: ITEM, id: 26}
+      - !!element {type: SPRITE_SHEET, id: 14}
+      - !!element {type: ITEM_CRAFT, id: 15}
+    - !!folder
+      name: metal_ball
+      children:
+      - !!element {type: ITEM, id: 50}
+      - !!element {type: ITEM_CRAFT, id: 21}
+      - !!element {type: SPRITE_SHEET, id: 38}
+    - !!folder
+      name: paper_cartridge
+      children:
+      - !!element {type: ITEM, id: 54}
+      - !!element {type: ITEM_CRAFT, id: 22}
+  - !!folder
+    name: Structures
+    children:
+    - !!folder
+      name: Farms
+      children:
+      - !!folder
+        name: Wheat Farm
+        children:
+        - !!element {type: ITEM, id: 39}
+        - !!element {type: ITEM_CRAFT, id: 17}
+      - !!folder
+        name: Orange Plot
+        children:
+        - !!element {type: ITEM, id: 65}
+        - !!element {type: ITEM_CRAFT, id: 34}
+      - !!folder
+        name: Infested Plot
+        children:
+        - !!element {type: ITEM, id: 66}
+        - !!element {type: ITEM_CRAFT, id: 35}
+    - !!folder
+      name: Stations
+      children:
+      - !!folder
+        name: Forge
+        children:
+        - !!element {type: ITEM, id: 28}
+        - !!element {type: ITEM_CRAFT, id: 8}
+      - !!folder
+        name: Crafting Table
+        children:
+        - !!element {type: ITEM_CRAFT, id: 7}
+        - !!element {type: ITEM, id: 27}
+      - !!folder
+        name: Campfire
+        children:
+        - !!element {type: ITEM_CRAFT, id: 5}
+        - !!element {type: ITEM, id: 12}
+      - !!folder
+        name: Culinary Table
+        children:
+        - !!element {type: ITEM, id: 13}
+        - !!element {type: ITEM_CRAFT, id: 6}
+      - !!folder
+        name: Magic Forge
+        children:
+        - !!element {type: ITEM, id: 37}
+        - !!element {type: ITEM_CRAFT, id: 16}
+    - !!folder
+      name: Storage
+      children:
+      - !!folder
+        name: chest
+        children:
+        - !!element {type: ITEM, id: 29}
+        - !!element {type: ITEM_CRAFT, id: 9}
+    - !!folder
+      name: Walls
+      children:
+      - !!folder
+        name: Reinforced Wall
+        children:
+        - !!element {type: ITEM, id: 30}
+        - !!element {type: ITEM_CRAFT, id: 10}
+  - !!folder
+    name: Enchanted Items
+    children:
+    - !!folder
+      name: Weapons
+      children: []
+    - !!folder
+      name: Accessories
+      children: []
+    - !!folder
+      name: Armor
+      children: []
+    - !!folder
+      name: Resources
+      children: []
+- !!folder
+  name: Effects
+  children:
+  - !!folder
+    name: Weapons
+    children:
+    - !!folder
+      name: wood_staff
+      children:
+      - !!element {type: SPRITE_SHEET, id: 4}
+      - !!element {type: EFFECT, id: 0}
+    - !!folder
+      name: wood_bow
+      children:
+      - !!element {type: EFFECT, id: 1}
+    - !!folder
+      name: kendo_stick
+      children:
+      - !!element {type: EFFECT, id: 2}
+      - !!element {type: SPRITE_SHEET, id: 10}
+    - !!folder
+      name: slingshot
+      children:
+      - !!element {type: EFFECT, id: 3}
+    - !!folder
+      name: reinforced_bow
+      children:
+      - !!element {type: EFFECT, id: 4}
+      - !!element {type: EFFECT, id: 5}
+    - !!folder
+      name: youkai_extermination_kit
+      children:
+      - !!element {type: SPRITE_SHEET, id: 27}
+      - !!element {type: SPRITE_SHEET, id: 28}
+      - !!element {type: EFFECT, id: 7}
+      - !!element {type: EFFECT, id: 8}
+    - !!folder
+      name: iron_musket
+      children:
+      - !!element {type: EFFECT, id: 10}
+    - !!folder
+      name: iron_katana
+      children:
+      - !!element {type: EFFECT, id: 11}
+      - !!element {type: SPRITE_SHEET, id: 40}
+    - !!folder
+      name: iron_sword
+      children:
+      - !!element {type: EFFECT, id: 12}
+      - !!element {type: SPRITE_SHEET, id: 42}
+    - !!folder
+      name: fae_wand
+      children:
+      - !!element {type: EFFECT, id: 14}
+      - !!element {type: SPRITE_SHEET, id: 47}
+    - !!folder
+      name: iron_slingshot
+      children:
+      - !!element {type: EFFECT, id: 15}
+  - !!folder
+    name: Creatures
+    children:
+    - !!folder
+      name: Low Fae
+      children:
+      - !!element {type: SPRITE_SHEET, id: 23}
+      - !!element {type: EFFECT, id: 6}
+  - !!folder
+    name: Tomes
+    children:
+    - !!folder
+      name: healing_tome
+      children:
+      - !!element {type: EFFECT, id: 13}
+- !!folder
+  name: Testing
+  children: []
