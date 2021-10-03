@@ -1164,6 +1164,39 @@ spriteSheets:
   heightOffset: 0.0
   shadow: true
   shadowResizing: 0
+- &golem_sentry
+  id: 51
+  name: golem_sentry
+  width: 9
+  height: 6
+  image: Images/ranged_golem.png
+  animationTemplate: *character
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &golem_bullet
+  id: 52
+  name: golem_bullet
+  width: 5
+  height: 3
+  image: Images/golem_bullet.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
+- &enchanting_table
+  id: 53
+  name: enchanting_table
+  width: 10
+  height: 6
+  image: Images/enchantment_table.png
+  animationTemplate: *single_image
+  equipmentOffset: null
+  heightOffset: 0.0
+  shadow: true
+  shadowResizing: 0
 effects:
 - &wood_staff_strike02
   id: 0
@@ -1368,7 +1401,7 @@ effects:
       targetType: TARGET
       amount:
         id: 23
-        base: 5.0
+        base: 2.0
         statMultipliers:
         - {statType: INTELLIGENCE, multiplier: 1.0}
       applyToStructures: true
@@ -1797,6 +1830,36 @@ effects:
     - !!StunAlteration {targetType: TARGET, duration: 450}
   repeatFollowingElements:
     id: 49
+    base: 0.0
+    statMultipliers: []
+  delayedFollowingElements: []
+  deathAlterations: []
+- &golem_bullet02
+  id: 16
+  name: golem_bullet
+  spriteSheet: *golem_bullet
+  orientation: MOVING_ANGLE
+  drawDepth: NORMAL
+  solid: true
+  duration: 1000
+  entityCollisionRadius: 0.6
+  mapCollisionRadius: 0.4
+  movement: !!LinearEffectMovement {initialDistance: 0.0, speed: 23.0, relative: false, destroyAtTargetPosition: false}
+  targets:
+  - targetType: ALL_ENEMIES
+    destroyWhenCollide: false
+    alterations:
+    - !!InstantDamageAlteration
+      targetType: TARGET
+      amount:
+        id: 52
+        base: 10.0
+        statMultipliers:
+        - {statType: INTELLIGENCE, multiplier: 1.0}
+      applyToStructures: true
+      attributes: {bypassInvincibility: false, trueDamage: false}
+  repeatFollowingElements:
+    id: 51
     base: 0.0
     statMultipliers: []
   delayedFollowingElements: []
@@ -2632,7 +2695,7 @@ items:
   maxStackSize: 50
   frame: {x: 7, y: 5}
   image: Images/items.png
-- !!ResourceItem
+- &golem_core !!ResourceItem
   id: 47
   name: golem_core
   maxStackSize: 5
@@ -3037,6 +3100,39 @@ items:
           quantity: 1
         probability: 0.5
     regrowthTime: {min: 420000, max: 600000}
+- &blank_book !!ResourceItem
+  id: 67
+  name: blank_book
+  maxStackSize: 4
+  frame: {x: 0, y: 9}
+  image: Images/items.png
+- &enchanting_table03 !!StructureItem
+  id: 68
+  name: enchanting_table
+  maxStackSize: 1
+  frame: {x: 1, y: 9}
+  image: Images/items.png
+  structure: &enchanting_table02 !!Structure
+    id: 19
+    name: enchanting_table
+    solid: true
+    spriteSheet: *enchanting_table
+    randomHorizontalFlip: true
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 0
+    bannedTiles:
+    - *water
+    - *deep_water
+    lightEmissionRadius: 0.0
+    deconstructionDuration: 10000
+    maxHealth: 0.0
+- &silk_cloth !!ResourceItem
+  id: 69
+  name: silk_cloth
+  maxStackSize: 30
+  frame: {x: 2, y: 9}
+  image: Images/items.png
 itemCrafts:
 - id: 0
   name: string
@@ -3315,7 +3411,34 @@ itemCrafts:
     quantity: 3
   discoveryItems:
   - *blessing
-  requiredStructure: null
+  requiredStructure: &shinto_shrine02 !!FactoryStructure
+    id: 12
+    name: shinto_shrine
+    solid: true
+    spriteSheet: *shinto_shrine
+    randomHorizontalFlip: true
+    avoidStuck: false
+    dimensions: {width: 1, height: 1}
+    duration: 0
+    bannedTiles: []
+    lightEmissionRadius: 0.0
+    deconstructionDuration: 0
+    maxHealth: 0.0
+    workingSpriteSheet: null
+    recipeSize: 1
+    fuelSize: 1
+    resultSize: 1
+    fuels: []
+    crafts:
+    - recipes:
+      - item: *gold_nugget
+        quantity: 1
+      results:
+      - item: *blessing
+        quantity: 1
+      duration: 0
+      fuelConsumption: 0.0
+    itemHandlingOnDeath: DROP
 - id: 19
   name: paper
   duration: 300
@@ -3421,16 +3544,16 @@ itemCrafts:
     item: *healing_tome02
     quantity: 1
   recipes:
-  - item: *grimoire_of_the_lost
-    quantity: 10
+  - item: *blank_book
+    quantity: 1
   - item: *fae_dust
     quantity: 5
-  - item: *apple
+  - item: *blessing
     quantity: 1
   discoveryItems:
-  - *grimoire_of_the_lost
-  - *fae_dust
-  requiredStructure: *magic_forge03
+  - *blessing
+  - *blank_book
+  requiredStructure: *enchanting_table02
 - id: 27
   name: grimoire_of_the_lost
   duration: 8000
@@ -3438,16 +3561,14 @@ itemCrafts:
     item: *grimoire_of_the_lost
     quantity: 1
   recipes:
-  - item: *paper
-    quantity: 10
-  - item: *string
-    quantity: 4
-  - item: *leather
-    quantity: 5
+  - item: *blank_book
+    quantity: 1
+  - item: *fae_dust
+    quantity: 1
   discoveryItems:
   - *leather
   - *paper
-  requiredStructure: *crafting_table03
+  requiredStructure: *enchanting_table02
 - id: 28
   name: iron_armor
   duration: 9000
@@ -3494,7 +3615,7 @@ itemCrafts:
     quantity: 1
   discoveryItems:
   - *fae_dust
-  requiredStructure: *crafting_table03
+  requiredStructure: *enchanting_table02
 - id: 31
   name: iron_sword
   duration: 6000
@@ -3573,6 +3694,53 @@ itemCrafts:
   - *silk_worm
   - *orange_plot02
   requiredStructure: null
+- id: 36
+  name: blank_book
+  duration: 3000
+  result: !!ItemStack
+    item: *blank_book
+    quantity: 1
+  recipes:
+  - item: *leather
+    quantity: 6
+  - item: *string
+    quantity: 4
+  - item: *paper
+    quantity: 10
+  discoveryItems:
+  - *paper
+  - *leather
+  requiredStructure: *crafting_table03
+- id: 37
+  name: enchanting_table
+  duration: 10000
+  result: !!ItemStack
+    item: *enchanting_table03
+    quantity: 1
+  recipes:
+  - item: *log
+    quantity: 6
+  - item: *etherium_crystal
+    quantity: 2
+  - item: *blank_book
+    quantity: 1
+  - item: *silk_cloth
+    quantity: 4
+  discoveryItems:
+  - *etherium_crystal
+  requiredStructure: *crafting_table03
+- id: 38
+  name: silk_cloth
+  duration: 600
+  result: !!ItemStack
+    item: *silk_cloth
+    quantity: 1
+  recipes:
+  - item: *silk_string
+    quantity: 5
+  discoveryItems:
+  - *silk_string
+  requiredStructure: *crafting_table03
 itemRewards:
 - &Tree102
   id: 0
@@ -3822,6 +3990,46 @@ itemRewards:
     probability: 0.25
 - *orange_plot03
 - *infested_plot03
+- &golem_sentry03
+  id: 14
+  name: golem_sentry
+  entries:
+  - itemStack: !!ItemStack
+      item: *golem_core
+      quantity: 1
+    probability: 0.75
+  - itemStack: !!ItemStack
+      item: *holy_silver_ingot
+      quantity: 1
+    probability: 0.5
+  - itemStack: !!ItemStack
+      item: *holy_silver_ingot
+      quantity: 1
+    probability: 0.15
+  - itemStack: !!ItemStack
+      item: *holy_silver_ingot
+      quantity: 1
+    probability: 0.04
+  - itemStack: !!ItemStack
+      item: *gold_nugget
+      quantity: 1
+    probability: 0.45
+  - itemStack: !!ItemStack
+      item: *gunpowder
+      quantity: 1
+    probability: 0.4
+  - itemStack: !!ItemStack
+      item: *gunpowder
+      quantity: 1
+    probability: 0.2
+  - itemStack: !!ItemStack
+      item: *metal_ball02
+      quantity: 1
+    probability: 0.45
+  - itemStack: !!ItemStack
+      item: *metal_ball02
+      quantity: 1
+    probability: 0.25
 behaviorSets:
 - &bento02
   id: 0
@@ -3931,6 +4139,77 @@ behaviorSets:
   - *attack
   - *flee02
 - *haha02
+- &golem_sentry02
+  id: 3
+  name: golem_sentry
+  behaviors:
+  - !!WanderBehavior
+    id: 0
+    name: spawn
+    changeConditions:
+    - !!TimeCondition
+      id: 0
+      nextBehavior: &wander03 !!WanderBehavior
+        id: 1
+        name: wander
+        changeConditions:
+        - !!DistanceCondition
+          id: 0
+          nextBehavior: &attack02 !!MoveTowardBehavior
+            id: 2
+            name: attack
+            changeConditions:
+            - !!DistanceCondition
+              id: 0
+              nextBehavior: *wander03
+              affectedNeighborsDistance: 0.0
+              targetType: CLOSEST_ENNEMY
+              operator: GREATER_THAN
+              targetDistance: 20.0
+            - !!DistanceCondition
+              id: 0
+              nextBehavior: &get_away !!GetAwayBehavior
+                id: 3
+                name: get away
+                changeConditions:
+                - !!DistanceCondition
+                  id: 0
+                  nextBehavior: *attack02
+                  affectedNeighborsDistance: 0.0
+                  targetType: CLOSEST_ENNEMY
+                  operator: GREATER_THAN
+                  targetDistance: 3.5
+                abilityToUseId: 2
+                targetType: CLOSEST_ENNEMY
+              affectedNeighborsDistance: 0.0
+              targetType: CLOSEST_ENNEMY
+              operator: LESS_THAN
+              targetDistance: 1.5
+            abilityToUseId: 1
+            targetType: CLOSEST_ENNEMY
+            minDistance: 3.0
+            randomAngle: 0.0
+          affectedNeighborsDistance: 10.0
+          targetType: CLOSEST_ENNEMY
+          operator: LESS_THAN
+          targetDistance: 15.0
+        - !!TookDamageCondition
+          id: 0
+          nextBehavior: *attack02
+          affectedNeighborsDistance: 15.0
+        abilityToUseId: 0
+        anchorType: SPAWN_POSITION
+        moveRate: 0.3
+        forwardFactor: 0.5
+      affectedNeighborsDistance: 0.0
+      targetTime: 5000
+    abilityToUseId: 0
+    anchorType: SPAWN_POSITION
+    moveRate: 0.3
+    forwardFactor: 0.5
+  - *wander03
+  - *attack02
+  - *get_away
 abilitySets:
 - &low_fae04
   id: 0
@@ -3976,6 +4255,48 @@ abilitySets:
           randomAngle: 0.0
           effect: *fae_bullet02
     predictionBulletSpeed: 18.0
+- &golem_sentry04
+  id: 1
+  name: golem_sentry
+  abilities:
+  - !!CreatureAlterationAbility
+    id: 0
+    cooldown: 300
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.17453292
+          effect: *golem_bullet02
+    predictionBulletSpeed: 23.0
+  - !!CreatureAlterationAbility
+    id: 0
+    cooldown: 700
+    alterations:
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.17453292
+          effect: *golem_bullet02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.17453292
+          effect: *golem_bullet02
+    - !!FollowingElementAlteration
+      targetType: TARGET
+      followingElement: !!FollowingEffect
+        offsetAngleEffect:
+          offsetAngle: 0.0
+          randomAngle: 0.17453292
+          effect: *golem_bullet02
+    predictionBulletSpeed: 23.0
 creatures:
 - &bento04
   id: 0
@@ -3995,7 +4316,7 @@ creatures:
   id: 1
   name: low_fae
   spriteSheet: *low_fae
-  collisionRadius: 0.0
+  collisionRadius: 0.4
   strength: -4.0
   agility: 1.0
   intelligence: 3.0
@@ -4006,6 +4327,20 @@ creatures:
   lifetime: 0
   inventorySize: 0
 - *haha03
+- &golem_sentry05
+  id: 3
+  name: golem_sentry
+  spriteSheet: *golem_sentry
+  collisionRadius: 0.8
+  strength: 5.0
+  agility: 4.0
+  intelligence: 4.0
+  solid: true
+  behaviorSet: *golem_sentry02
+  itemReward: *golem_sentry03
+  abilitySet: *golem_sentry04
+  lifetime: 0
+  inventorySize: 0
 tiles:
 - &grass
   id: 0
@@ -4142,34 +4477,7 @@ structures:
 - *chest03
 - *magic_forge03
 - *wheat_farm03
-- &shinto_shrine02 !!FactoryStructure
-  id: 12
-  name: shinto_shrine
-  solid: true
-  spriteSheet: *shinto_shrine
-  randomHorizontalFlip: true
-  avoidStuck: false
-  dimensions: {width: 1, height: 1}
-  duration: 0
-  bannedTiles: []
-  lightEmissionRadius: 0.0
-  deconstructionDuration: 0
-  maxHealth: 0.0
-  workingSpriteSheet: null
-  recipeSize: 1
-  fuelSize: 1
-  resultSize: 1
-  fuels: []
-  crafts:
-  - recipes:
-    - item: *gold_nugget
-      quantity: 1
-    results:
-    - item: *blessing
-      quantity: 1
-    duration: 0
-    fuelConsumption: 0.0
-  itemHandlingOnDeath: DROP
+- *shinto_shrine02
 - &tree_202 !!HarvestableStructure
   id: 13
   name: tree 2
@@ -4244,6 +4552,7 @@ structures:
   regrowthTime: {min: 420000, max: 540000}
 - *orange_plot04
 - *infested_plot04
+- *enchanting_table02
 mapProviders:
 - &default !!ProcedurallyGeneratedMapProvider
   id: 0
@@ -4489,6 +4798,26 @@ ecosystems:
     maximumCreatures: 1
     respawnTime: {min: 360000, max: 420000}
     structure: *small_stones03
+    spawnRadius: 10.0
+    managedRadius: 50.0
+  - creatureChooser:
+      backingArray:
+      - probability: 1.0
+        element: *golem_sentry05
+    initialSpawn: 2
+    maximumCreatures: 1
+    respawnTime: {min: 360000, max: 420000}
+    structure: *crystal03
+    spawnRadius: 10.0
+    managedRadius: 50.0
+  - creatureChooser:
+      backingArray:
+      - probability: 1.0
+        element: *golem_sentry05
+    initialSpawn: 3
+    maximumCreatures: 2
+    respawnTime: {min: 360000, max: 420000}
+    structure: *gilded_stone03
     spawnRadius: 10.0
     managedRadius: 50.0
   darknessSpawner:

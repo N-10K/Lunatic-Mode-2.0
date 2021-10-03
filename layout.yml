@@ -88,6 +88,11 @@ children:
         children:
         - !!element {type: SPRITE_SHEET, id: 26}
         - !!element {type: STRUCTURE, id: 10}
+      - !!folder
+        name: Enchanting Table
+        children:
+        - !!element {type: SPRITE_SHEET, id: 53}
+        - !!element {type: STRUCTURE, id: 19}
     - !!folder
       name: Player Buildings
       children:
@@ -211,6 +216,14 @@ children:
       - !!element {type: ABILITY_SET, id: 0}
       - !!element {type: ITEM_REWARD, id: 5}
       - !!element {type: CREATURE, id: 1}
+    - !!folder
+      name: Golem Sentry
+      children:
+      - !!element {type: SPRITE_SHEET, id: 51}
+      - !!element {type: ITEM_REWARD, id: 14}
+      - !!element {type: CREATURE, id: 3}
+      - !!element {type: ABILITY_SET, id: 1}
+      - !!element {type: BEHAVIOR_SET, id: 3}
   - !!folder
     name: Passive
     children:
@@ -278,6 +291,10 @@ children:
     - !!element {type: ITEM, id: 52}
     - !!element {type: ITEM, id: 53}
     - !!element {type: ITEM, id: 64}
+    - !!element {type: ITEM, id: 67}
+    - !!element {type: ITEM_CRAFT, id: 36}
+    - !!element {type: ITEM, id: 69}
+    - !!element {type: ITEM_CRAFT, id: 38}
   - !!folder
     name: Weapons
     children:
@@ -554,6 +571,11 @@ children:
         children:
         - !!element {type: ITEM, id: 37}
         - !!element {type: ITEM_CRAFT, id: 16}
+      - !!folder
+        name: Enchanting Table
+        children:
+        - !!element {type: ITEM, id: 68}
+        - !!element {type: ITEM_CRAFT, id: 37}
     - !!folder
       name: Storage
       children:
@@ -652,6 +674,11 @@ children:
       children:
       - !!element {type: SPRITE_SHEET, id: 23}
       - !!element {type: EFFECT, id: 6}
+    - !!folder
+      name: Golem Sentry
+      children:
+      - !!element {type: SPRITE_SHEET, id: 52}
+      - !!element {type: EFFECT, id: 16}
   - !!folder
     name: Tomes
     children:
